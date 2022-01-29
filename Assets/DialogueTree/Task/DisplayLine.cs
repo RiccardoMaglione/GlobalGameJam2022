@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class DisplayLine : StateMachineBehaviour
 {
-    enum Panel { First, Second, Third };
+    enum Panel { Left, Center, Right, Player };
     
     [SerializeField] string sentence; 
     [SerializeField] Panel panelPosition;

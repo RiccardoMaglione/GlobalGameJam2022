@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class AskQuestions : StateMachineBehaviour
 {
-    enum Panel { First, Second, Third };
+    enum Panel { Left, Center, Right, Player };
 
     [SerializeField] string[] question;
     [SerializeField] Panel[] panelPosition;
