@@ -54,7 +54,7 @@ public class AskQuestions : StateMachineBehaviour
         {
             if (leftQuestions.Length > 1)
             {
-                for (int i = leftQuestions.Length - 1; i < leftQuestions.Length - 1; i++)
+                for (int i = 0; i < leftQuestions.Length - 1; i++)
                 {
                     leftQuestions[i] = leftQuestions[i + 1];
                 }
@@ -70,7 +70,7 @@ public class AskQuestions : StateMachineBehaviour
         {
             if (centerQuestions.Length > 1)
             {
-                for (int i = centerQuestions.Length - 1; i < centerQuestions.Length - 1; i++)
+                for (int i = 0; i < centerQuestions.Length - 1; i++)
                 {
                     centerQuestions[i] = centerQuestions[i + 1];
                 }
@@ -86,7 +86,7 @@ public class AskQuestions : StateMachineBehaviour
         {
             if (rightQuestions.Length > 1)
             {
-                for (int i = rightQuestions.Length - 1; i < rightQuestions.Length - 1; i++)
+                for (int i = 0; i < rightQuestions.Length - 1; i++)
                 {
                     rightQuestions[i] = rightQuestions[i + 1];
                 }
