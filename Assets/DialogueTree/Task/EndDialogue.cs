@@ -8,7 +8,9 @@ public class EndDialogue : StateMachineBehaviour
 
     CharactersManager characterManager;
     ButtonManager buttonManager;
-    
+
+    GameObject fadeManager;
+
     Text panelText;
     GameObject chosenPanel;
     
@@ -18,12 +20,15 @@ public class EndDialogue : StateMachineBehaviour
     Text letItOutButtonText;
     Text condemnButtonText;
 
+    public Color test;
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         letItOut = GameObject.Find("LetItOut");
         condemn = GameObject.Find("Condemn");
         chosenPanel = GameObject.Find("Center");
+
+        fadeManager = GameObject.Find("FadeManager");
 
         panelText = chosenPanel.GetComponentInChildren<Text>();
         letItOutButtonText = letItOut.GetComponentInChildren<Text>();
@@ -40,7 +45,12 @@ public class EndDialogue : StateMachineBehaviour
         letItOutButtonText.enabled = true;
         condemnButtonText.enabled = true;
 
-        panelText.text = sentence;      
+        panelText.text = sentence;
+
+        fadeManager.GetComponent<FadeObject>().FadeImage(letItOut);
+        fadeManager.GetComponent<FadeObject>().FadeImage(condemn);
+        fadeManager.GetComponent<FadeObject>().FadeText(letItOutButtonText);
+        fadeManager.GetComponent<FadeObject>().FadeText(condemnButtonText);
     }
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
