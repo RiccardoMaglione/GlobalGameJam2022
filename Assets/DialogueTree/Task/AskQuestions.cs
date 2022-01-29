@@ -21,7 +21,7 @@ public class AskQuestions : StateMachineBehaviour
             chosenPanel.GetComponent<Button>().enabled = true;
             panelText.enabled = true;
             panelText.text = question[i];
-        }      
+        }
     }
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
