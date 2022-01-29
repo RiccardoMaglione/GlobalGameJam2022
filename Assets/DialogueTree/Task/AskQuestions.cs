@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,35 +6,118 @@ public class AskQuestions : StateMachineBehaviour
 {
     enum Panel { Left, Center, Right, Player };
 
-    [SerializeField] string[] question;
-    [SerializeField] Panel[] panelPosition;
+    [SerializeField] string[] leftQuestions;
+    [SerializeField] string[] centerQuestions;
+    [SerializeField] string[] rightQuestions;
+
+    string[] tempLeftQuestions;
 
     GameObject chosenPanel;
     Text panelText;
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        for (int i = 0; i < question.Length; i++)
+        if (leftQuestions.Length != 0)
         {
-            chosenPanel = GameObject.Find(panelPosition[i].ToString());
+            chosenPanel = GameObject.Find("Left");
             panelText = chosenPanel.GetComponentInChildren<Text>();
             chosenPanel.GetComponent<Image>().enabled = true;
             chosenPanel.GetComponent<Button>().enabled = true;
             panelText.enabled = true;
-            panelText.text = question[i];
+            panelText.text = leftQuestions[0];
+        }
+
+        if (centerQuestions.Length != 0)
+        {
+            chosenPanel = GameObject.Find("Center");
+            panelText = chosenPanel.GetComponentInChildren<Text>();
+            chosenPanel.GetComponent<Image>().enabled = true;
+            chosenPanel.GetComponent<Button>().enabled = true;
+            panelText.enabled = true;
+            panelText.text = centerQuestions[0];
+        }
+
+        if (rightQuestions.Length != 0)
+        {
+            chosenPanel = GameObject.Find("Right");
+            panelText = chosenPanel.GetComponentInChildren<Text>();
+            chosenPanel.GetComponent<Image>().enabled = true;
+            chosenPanel.GetComponent<Button>().enabled = true;
+            panelText.enabled = true;
+            panelText.text = rightQuestions[0];
         }
     }
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    {
-        for (int i = 0; i < question.Length; i++)
+    {      
+        if (animator.GetBool("FirstQuestion") == true)
         {
-            chosenPanel = GameObject.Find(panelPosition[i].ToString());
-            panelText = chosenPanel.GetComponentInChildren<Text>();
-            chosenPanel.GetComponent<Image>().enabled = false;
-            chosenPanel.GetComponent<Button>().enabled = false;
-            panelText.enabled = false;
+            if (leftQuestions.Length > 1)
+            {
+                for (int i = leftQuestions.Length - 1; i < leftQuestions.Length - 1; i++)
+                {
+                    leftQuestions[i] = leftQuestions[i + 1];
+                }
+
+                Array.Resize(ref leftQuestions, leftQuestions.Length - 1);
+            }
+
+            else
+                leftQuestions = new string[leftQuestions.Length - 1];
         }
+
+        if (animator.GetBool("SecondQuestion") == true)
+        {
+            if (centerQuestions.Length > 1)
+            {
+                for (int i = centerQuestions.Length - 1; i < centerQuestions.Length - 1; i++)
+                {
+                    centerQuestions[i] = centerQuestions[i + 1];
+                }
+
+                Array.Resize(ref centerQuestions, centerQuestions.Length - 1);
+            }
+
+            else
+                centerQuestions = new string[centerQuestions.Length - 1];
+        }
+
+        if (animator.GetBool("ThirdQuestion") == true)
+        {
+            if (rightQuestions.Length > 1)
+            {
+                for (int i = rightQuestions.Length - 1; i < rightQuestions.Length - 1; i++)
+                {
+                    rightQuestions[i] = rightQuestions[i + 1];
+                }
+
+                Array.Resize(ref rightQuestions, rightQuestions.Length - 1);
+            }
+
+            else
+                rightQuestions = new string[rightQuestions.Length - 1];
+        }
+
+        chosenPanel = GameObject.Find("Left");
+        panelText = chosenPanel.GetComponentInChildren<Text>();
+        chosenPanel.GetComponent<Image>().enabled = false;
+        chosenPanel.GetComponent<Button>().enabled = false;
+        panelText.enabled = false;
+
+        chosenPanel = GameObject.Find("Center");
+        panelText = chosenPanel.GetComponentInChildren<Text>();
+        chosenPanel.GetComponent<Image>().enabled = false;
+        chosenPanel.GetComponent<Button>().enabled = false;
+        panelText.enabled = false;
+
+
+
+        chosenPanel = GameObject.Find("Right");
+        panelText = chosenPanel.GetComponentInChildren<Text>();
+        chosenPanel.GetComponent<Image>().enabled = false;
+        chosenPanel.GetComponent<Button>().enabled = false;
+        panelText.enabled = false;
+
 
         animator.SetBool("FirstQuestion", false);
         animator.SetBool("SecondQuestion", false);
