@@ -14,9 +14,11 @@ public class AskQuestions : StateMachineBehaviour
 
     GameObject chosenPanel;
     Text panelText;
+    ParticleManager particleManager;
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        particleManager = FindObjectOfType<ParticleManager>();
         animator.SetBool("test", true);
         if (leftQuestions.Length != 0)
         {
@@ -26,6 +28,7 @@ public class AskQuestions : StateMachineBehaviour
             chosenPanel.GetComponent<Button>().enabled = true;
             panelText.enabled = true;
             panelText.text = leftQuestions[0];
+            particleManager.particle1.SetActive(true);
         }
 
         if (centerQuestions.Length != 0)
@@ -36,6 +39,7 @@ public class AskQuestions : StateMachineBehaviour
             chosenPanel.GetComponent<Button>().enabled = true;
             panelText.enabled = true;
             panelText.text = centerQuestions[0];
+            particleManager.particle2.SetActive(true);
         }
 
         if (rightQuestions.Length != 0)
@@ -46,6 +50,7 @@ public class AskQuestions : StateMachineBehaviour
             chosenPanel.GetComponent<Button>().enabled = true;
             panelText.enabled = true;
             panelText.text = rightQuestions[0];
+            particleManager.particle3.SetActive(true);
         }
     }
 
@@ -104,12 +109,14 @@ public class AskQuestions : StateMachineBehaviour
         chosenPanel.GetComponent<Image>().enabled = false;
         chosenPanel.GetComponent<Button>().enabled = false;
         panelText.enabled = false;
+        particleManager.particle1.SetActive(false);
 
         chosenPanel = GameObject.Find("Center");
         panelText = chosenPanel.GetComponentInChildren<Text>();
         chosenPanel.GetComponent<Image>().enabled = false;
         chosenPanel.GetComponent<Button>().enabled = false;
         panelText.enabled = false;
+        particleManager.particle2.SetActive(false);
 
 
 
@@ -118,6 +125,7 @@ public class AskQuestions : StateMachineBehaviour
         chosenPanel.GetComponent<Image>().enabled = false;
         chosenPanel.GetComponent<Button>().enabled = false;
         panelText.enabled = false;
+        particleManager.particle3.SetActive(false);
 
 
         animator.SetBool("FirstQuestion", false);
