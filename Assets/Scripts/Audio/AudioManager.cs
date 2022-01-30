@@ -78,6 +78,6 @@ public class AudioManager : MonoBehaviour
             s.source.loop = s.loop;
         }
 
-        Play("MainMenuMusic");
+        Play("desktop");
     }
 }
