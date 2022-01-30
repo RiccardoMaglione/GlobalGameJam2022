@@ -13,6 +13,9 @@ public class FadeObject : MonoBehaviour
     public float BlackPanelValueToAddAlpha;
     public float BlackPanelTimerForEveryAddAlpha;
     public GameObject PanelBlack;
+    bool CanChangeDialogue;
+    CharactersManager characterManager;
+    ButtonManager buttonManager;
     public IEnumerator FadeImageIEnum(GameObject ObjectToFade, Color ColorToAlpha)
     {
         ColorToAlpha = ObjectToFade.GetComponent<Image>().color;
@@ -64,6 +67,15 @@ public class FadeObject : MonoBehaviour
                 ColorToAlpha.a += BlackPanelValueToAddAlpha;
                 ObjectToFade.GetComponent<Image>().color = ColorToAlpha;
                 yield return new WaitForSeconds(BlackPanelTimerForEveryAddAlpha);
+            }
+            else if(ObjectToFade.GetComponent<Image>().color.a == 100 && CanChangeDialogue == false)
+            {
+                CanChangeDialogue = true;
+                characterManager = FindObjectOfType<CharactersManager>();
+                buttonManager = FindObjectOfType<ButtonManager>();
+                buttonManager.i++;
+                characterManager.PlayDialogue();
+                //Far ritornare canchangedialogue false nel dialogue successivo
             }
         }
     }
