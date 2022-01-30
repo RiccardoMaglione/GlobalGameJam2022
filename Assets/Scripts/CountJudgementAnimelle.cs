@@ -12,18 +12,7 @@ public class CountJudgementAnimelle : MonoBehaviour
 
     void Update()
     {
-        if (CountSpare == 1 || CountSpare == 2)
-        {
-            SceneManager.LoadScene(NameGameover12);
-        }
-        if (CountSpare == 3 || CountSpare == 4)
-        {
-            SceneManager.LoadScene(NameGameover34);
-        }
-        if (CountSpare == 5 || CountSpare == 6)
-        {
-            SceneManager.LoadScene(NameGameover56);
-        }
+
     }
 
     public void CountUpSpare()
