@@ -13,7 +13,7 @@ public class FadeObject : MonoBehaviour
     public float BlackPanelValueToAddAlpha;
     public float BlackPanelTimerForEveryAddAlpha;
     public GameObject PanelBlack;
-    bool CanChangeDialogue;
+    [HideInInspector] public bool CanChangeDialogue;
     CharactersManager characterManager;
     ButtonManager buttonManager;
     public IEnumerator FadeImageIEnum(GameObject ObjectToFade, Color ColorToAlpha)
@@ -54,31 +54,18 @@ public class FadeObject : MonoBehaviour
     }
     public IEnumerator FadeChangeDialogueIEnum(GameObject ObjectToFade, Color ColorToAlpha)
     {
-        ColorToAlpha = ObjectToFade.GetComponent<Image>().color;
-        ColorToAlpha.a = 0;
-        ObjectToFade.GetComponent<Image>().color = ColorToAlpha;
-
+        CanChangeDialogue = false;
+        ObjectToFade.GetComponent<Image>().CrossFadeAlpha(0, 0f, false);
         yield return new WaitForSeconds(BlackPanelTimeToWait);
-
-        while (true)
-        {
-            if (ObjectToFade.GetComponent<Image>().color.a <= 100)
-            {
-                ColorToAlpha.a += BlackPanelValueToAddAlpha;
-                ObjectToFade.GetComponent<Image>().color = ColorToAlpha;
-                yield return new WaitForSeconds(BlackPanelTimerForEveryAddAlpha);
-            }
-            else if(ObjectToFade.GetComponent<Image>().color.a == 100 && CanChangeDialogue == false)
-            {
-                CanChangeDialogue = true;
-                characterManager = FindObjectOfType<CharactersManager>();
-                buttonManager = FindObjectOfType<ButtonManager>();
-                buttonManager.i++;
-                characterManager.PlayDialogue();
-                //Far ritornare canchangedialogue false nel dialogue successivo
-            }
-        }
+        ObjectToFade.GetComponent<Image>().CrossFadeAlpha(1, 1f, false);
     }
+
+    public IEnumerator FadeInChangeDialogueIEnum(GameObject ObjectToFade, Color ColorToAlpha)
+    {
+        yield return new WaitForSeconds(BlackPanelTimeToWait);
+        ObjectToFade.GetComponent<Image>().CrossFadeAlpha(0, 1f, false);
+    }
+
     public void FadeImage(GameObject ObjectToFade)
     {
         StartCoroutine(FadeImageIEnum(ObjectToFade, ObjectToFade.GetComponent<Image>().color));
@@ -91,6 +78,11 @@ public class FadeObject : MonoBehaviour
 
     public void FadeChangeDialogue(GameObject ObjectToFade)
     {
+        //ObjectToFade.GetComponent<Image>().CrossFadeAlpha(100, 5, false);
         StartCoroutine(FadeChangeDialogueIEnum(ObjectToFade, ObjectToFade.GetComponent<Image>().color));
+    }
+    public void FadeInEnterDialogue(GameObject ObjectToFade)
+    {
+        StartCoroutine(FadeInChangeDialogueIEnum(ObjectToFade, ObjectToFade.GetComponent<Image>().color));
     }
 }
