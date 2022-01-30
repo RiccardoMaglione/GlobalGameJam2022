@@ -14,8 +14,24 @@ public class FadeCharacter : MonoBehaviour
 
     public float TimeBetweenAnimellaAndDialogue = 1f;
 
+
+    public static bool OnlyOnce;
+    public GameObject Panel;
+
     public void FunctionFadeDialogue(Image[] FadeDialogueTemp, Animator anim)
     {
+        StartCoroutine(IntroductionAndOther(FadeDialogueTemp, anim));
+    }
+
+    public IEnumerator IntroductionAndOther(Image[] FadeDialogueTemp, Animator anim)
+    {
+        if (!OnlyOnce)
+        {
+            OnlyOnce = true;
+            Panel.SetActive(true);
+            yield return new WaitForSeconds(10);
+            Panel.SetActive(false);
+        }
         DeactiveAnimelle();
         StartCoroutine(FadedDialogueFuncIEnum(FadeDialogueTemp, anim));
     }
