@@ -207,8 +207,8 @@ MonoBehaviour:
     you are interested in seeing the answers of other players you can fill out the
     form on the itch.io page.\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8892660144e1e394f8795ed4e428d6ea, type: 2}
+  m_sharedMaterial: {fileID: -8425439283701500781, guid: 8892660144e1e394f8795ed4e428d6ea, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

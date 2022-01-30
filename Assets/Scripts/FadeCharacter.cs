@@ -20,7 +20,10 @@ public class FadeCharacter : MonoBehaviour
 
     public void FunctionFadeDialogue(Image[] FadeDialogueTemp, Animator anim)
     {
+        anim.SetBool("test", true);
         StartCoroutine(IntroductionAndOther(FadeDialogueTemp, anim));
+        anim.SetBool("test", false);
+
     }
 
     public IEnumerator IntroductionAndOther(Image[] FadeDialogueTemp, Animator anim)
@@ -29,9 +32,12 @@ public class FadeCharacter : MonoBehaviour
         {
             OnlyOnce = true;
             Panel.SetActive(true);
+
             yield return new WaitForSeconds(10);
+
             Panel.SetActive(false);
         }
+        yield return new WaitForSeconds(0);
         DeactiveAnimelle();
         StartCoroutine(FadedDialogueFuncIEnum(FadeDialogueTemp, anim));
     }
