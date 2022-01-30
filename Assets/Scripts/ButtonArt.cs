@@ -16,10 +16,15 @@ public class ButtonArt : MonoBehaviour
     {
         Fire.SetActive(true);
         ThisImage.sprite = Hover;
+        //ThisImage.gameObject.transform.localScale = new Vector3 (1.2f, 1.2f, 1);
+        //ThisImage.gameObject.transform.position = new Vector3(ThisImage.gameObject.transform.position.x -1, ThisImage.gameObject.transform.position.y, ThisImage.gameObject.transform.position.z);
+
     }
     public void ImageDehover()
     {
         Fire.SetActive(false);
         ThisImage.sprite = Dehover;
+        //ThisImage.gameObject.transform.localScale = new Vector3 (1, 1, 1);
+        //ThisImage.gameObject.transform.position = new Vector3(ThisImage.gameObject.transform.position.x +1, ThisImage.gameObject.transform.position.y, ThisImage.gameObject.transform.position.z);
     }
 }
