@@ -408,6 +408,15 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: b2
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: FirstQuestion
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: SecondQuestion
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: ThirdQuestion
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1915927317238072962}
   m_Solo: 0
@@ -1464,7 +1473,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: LetItOut
+    m_ConditionEvent: Condemn
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8631829812283718237}
@@ -1492,7 +1501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: The majority has ruled
+  sentence: The majority has ruled.
   panelPosition: 1
 --- !u!1102 &4292131385573322172
 AnimatorState:
@@ -2042,7 +2051,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Condemn
+    m_ConditionEvent: LetItOut
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5766987125624320823}
