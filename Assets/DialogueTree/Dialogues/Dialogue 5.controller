@@ -37,7 +37,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Sto sopportando una pena troppo ingiusta per un atto di poco conto.
+  sentence: "I\u2019m taking an unfair punishment for a minor crime."
   panelPosition: 3
 --- !u!114 &-8818357197726326412
 MonoBehaviour:
@@ -76,31 +76,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &-8640499964133473206
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: NextLine
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -7762700985114983022}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1101 &-8189364764087012794
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -110,7 +85,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: LetItOut
+    m_ConditionEvent: Condemn
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8508875822775628042}
@@ -138,9 +113,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "In passato ho rubato la borsa a una signora, \xE8 vero, ma non credo
-    di meritarmi quello che sto passando."
+  sentence: "I stole a purse from an old woman, but I don\u2019t feel I deserve what
+    I\u2019m going through."
   panelPosition: 3
+--- !u!1102 &-7874891099076019512
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New State 0 2
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 3629107873585642947}
+  m_StateMachineBehaviours:
+  - {fileID: -1862393790533894676}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1101 &-7804723150614048504
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -201,34 +204,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1101 &-7562143568521727762
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: NextLine
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: c1
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 4443538072972657647}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!114 &-7509550478472573869
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -241,8 +216,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Secondo i medici, il mio corpo potrebbe essere una preziosissima risorsa
-    per sviluppare una cura per il cancro
+  sentence: According to doctors, my body could be a precious resource to develop
+    a cure for cancer.
   panelPosition: 3
 --- !u!1102 &-7392582851723642696
 AnimatorState:
@@ -287,6 +262,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JudgeLetItOut: 0
   timer: 0
+--- !u!1101 &-6869334027476581285
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextLine
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: c1
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 4443538072972657647}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &-6674066196262108876
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -321,8 +324,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Le pene che vengono date difficilmente sono sbagliate, ma sono curioso
-    di sapere quali sono le tue colpe
+  sentence: "The sentences are almost always proper, but I\u2019m curious to know
+    your guilt."
   panelPosition: 1
 --- !u!1101 &-6235085753451233100
 AnimatorStateTransition:
@@ -333,7 +336,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Condemn
+    m_ConditionEvent: LetItOut
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1407362888264714208}
@@ -386,7 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68f554ce225bf74c80644ae8981e0e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: We believe we have enough information to make a judgment.
+  sentence: Your fate has been chosen.
   test: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1101 &-5562000308093821541
 AnimatorStateTransition:
@@ -609,6 +612,91 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1101 &-3921043199988581822
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextLine
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: c1
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 4479486700687597861}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &-3814460876360940171
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextLine
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: c1
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 4443538072972657647}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1102 &-3258820986246033448
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New State 0 0 2
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: -3921043199988581822}
+  - {fileID: -3814460876360940171}
+  m_StateMachineBehaviours:
+  - {fileID: 8378910062442846265}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &-3202388097441923384
 AnimatorState:
   serializedVersion: 6
@@ -620,7 +708,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: -8640499964133473206}
+  - {fileID: -995915358369914476}
   m_StateMachineBehaviours:
   - {fileID: 893998028135541881}
   m_Position: {x: 50, y: 50, z: 0}
@@ -649,7 +737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: THIS THING WILL AFFECT THE MORTAL WORLD.
+  sentence: THIS WILL AFFECT THE MORTAL WORLD.
   panelPosition: 2
 --- !u!1102 &-2953437105234990575
 AnimatorState:
@@ -741,6 +829,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0f5b566e68fd9e4d842262f9c0286e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-1862393790533894676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentence: I know that you think what I am going through is excessive concerning
+    what I have done.
+  panelPosition: 3
 --- !u!1101 &-1601205490155473042
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -909,8 +1012,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: The majority has ruled
+  sentence: The majority has ruled.
   panelPosition: 1
+--- !u!1101 &-995915358369914476
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextLine
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -7874891099076019512}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!114 &-973059031306765247
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -923,8 +1051,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "Per\xF2 quest' anima non ha tutti i torti."
+  sentence: I think he may be right.
   panelPosition: 0
+--- !u!1101 &-965426181693999504
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextLine
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: c1
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 4479486700687597861}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &-893834178499997207
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -962,7 +1118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "She didn\u2019t deserve what she was going through."
+  sentence: "He didn\u2019t deserve what he was going through."
   panelPosition: 0
 --- !u!1101 &-661012317768334886
 AnimatorStateTransition:
@@ -1051,7 +1207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Mi pare eccessivo per quello che ha fatto
+  sentence: "I think it\u2019s too much for what he did."
   panelPosition: 3
 --- !u!91 &9100000
 AnimatorController:
@@ -1067,79 +1223,79 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: FirstQuestion
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: SecondQuestion
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: ThirdQuestion
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: b1
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: b2
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: n1
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: c1
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Condemn
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: LetItOut
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: FinishJudgement
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: test
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: AnimelleParameters
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 1
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -1165,7 +1321,7 @@ AnimatorStateTransition:
     m_ConditionEvent: AnimelleParameters
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -72453076857173162, guid: d6c847e35a7092148b3f0fa9b1d719c5, type: 2}
+  m_DstState: {fileID: -72453076857173162}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -1217,8 +1373,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: -7562143568521727762}
-  - {fileID: 5445272595755764414}
+  - {fileID: 7824605558377491835}
   m_StateMachineBehaviours:
   - {fileID: 3088370787064667866}
   m_Position: {x: 50, y: 50, z: 0}
@@ -1297,7 +1452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Questo potrebbe aiutare molte persone.
+  sentence: This could help a lot of people.
   panelPosition: 0
 --- !u!1102 &671276649386579571
 AnimatorState:
@@ -1364,8 +1519,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "Ci sono delle anime qui nell'Ade che hanno fatto cose molto peggiori
-    di me, ma a cui \xE8 stato concesso l'Asfodelo."
+  sentence: There are souls here in Hades who have done far worse things than me,
+    but some of them are in the Asphodel Fields anyway.
   panelPosition: 3
 --- !u!1101 &723443330400979752
 AnimatorStateTransition:
@@ -1463,9 +1618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "Beh, hai sentito quello che ho detto agli altri...  so che anche tu
-    pensi che sia eccessivo ci\xF2 che sto passando in relazione a quello che ho
-    fatto."
+  sentence: 'Well, you heard what I said to the others... '
   panelPosition: 3
 --- !u!1101 &1049262276727084033
 AnimatorStateTransition:
@@ -1618,7 +1771,7 @@ AnimatorStateMachine:
     m_Position: {x: -500, y: -40, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 254808719804865962}
-    m_Position: {x: 100, y: -140, z: 0}
+    m_Position: {x: 130, y: -150, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 671276649386579571}
     m_Position: {x: 1100, y: -150, z: 0}
@@ -1688,6 +1841,12 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: -1268011710660047704}
     m_Position: {x: 90, y: -490, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -3258820986246033448}
+    m_Position: {x: 140, y: -50, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -7874891099076019512}
+    m_Position: {x: -500, y: 30, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -1710,7 +1869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: FOR THE GREATER GOOD.
+  sentence: IT WAS TO SERVE A GREATER GOOD.
   panelPosition: 2
 --- !u!1101 &2390483493843086980
 AnimatorStateTransition:
@@ -1852,8 +2011,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "Sono stato rinchiuso nel Tartaro, condannato in eterno a morire atrocemente
-    per mano delle Furie. Non ce la faccio, \xE8 una sofferenza insopportabile."
+  sentence: I was condemned to die atrociously at the hands of the Furies in Tartarus, 
+    for eternity.
   panelPosition: 3
 --- !u!1101 &3142904048634009520
 AnimatorStateTransition:
@@ -1943,6 +2102,31 @@ AnimatorStateTransition:
   m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 0
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &3629107873585642947
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextLine
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -7762700985114983022}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -2069,7 +2253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "Il tormento che mi \xE8 stato riservato \xE8 una brutalit\xE0 disumana."
+  sentence: The torment reserved to me is inhuman and unjust.
   panelPosition: 3
 --- !u!1102 &4479486700687597861
 AnimatorState:
@@ -2159,7 +2343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Ma non sei tu a dover decidere la punizione.
+  sentence: You're not the one that has to make the decision.
   panelPosition: 1
 --- !u!1102 &5274300624301702304
 AnimatorState:
@@ -2268,34 +2452,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1101 &5445272595755764414
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: NextLine
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: c1
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 4479486700687597861}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1101 &5463670366927134785
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2333,7 +2489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: NON STA A TE DECIDERE COSA TI MERITI O NON TI MERITI.
+  sentence: DECIDING WHAT YOU DESERVE IS NOT UP TO YOU.
   panelPosition: 2
 --- !u!1102 &6271602833342408516
 AnimatorState:
@@ -2505,8 +2661,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Ricordo che ero in sala operatoria per la donazione per un esperimento
-    nel campo medico.
+  sentence: I remember I was in surgery to donate for an experiment in the medical
+    field.
   panelPosition: 3
 --- !u!1101 &7463540841254135885
 AnimatorStateTransition:
@@ -2567,6 +2723,31 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &7824605558377491835
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextLine
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -3258820986246033448}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &8236622743750680674
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2617,6 +2798,20 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &8378910062442846265
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentence: I can't take it anymore... It's unbearable suffering.
+  panelPosition: 3
 --- !u!1102 &8508875822775628042
 AnimatorState:
   serializedVersion: 6
