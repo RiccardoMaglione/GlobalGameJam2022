@@ -14,10 +14,14 @@ public class AskQuestions : StateMachineBehaviour
 
     GameObject chosenPanel;
     Text panelText;
+    GameObject FadeObjectObject;
     ParticleManager particleManager;
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        FadeObjectObject = GameObject.Find("FadeManager");
+        FadeObjectObject.GetComponent<FadeObject>().PanelBlack.SetActive(false);
+
         particleManager = FindObjectOfType<ParticleManager>();
         animator.SetBool("test", true);
         if (leftQuestions.Length != 0)

@@ -17,6 +17,13 @@ public class FadeCharacter : MonoBehaviour
     public void FunctionFadeDialogue(Image[] FadeDialogueTemp, Animator anim)
     {
         DeactiveAnimelle();
+        StartCoroutine(FadedDialogueFuncIEnum(FadeDialogueTemp, anim));
+    }
+
+    public IEnumerator FadedDialogueFuncIEnum(Image[] FadeDialogueTemp, Animator anim)
+    {
+        yield return new WaitForSeconds(0.5f);
+
         for (int i = 0; i < FadeDialogueTemp.Length; i++)
         {
             FadeDialogueTemp[i].gameObject.SetActive(true);

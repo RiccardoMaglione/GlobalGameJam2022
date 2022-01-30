@@ -7,15 +7,18 @@ public class PanelJudgementState : StateMachineBehaviour
     GameObject judgementManager;
     public bool JudgeLetItOut;
     public float timer;
+    GameObject CountSoul;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.SetBool("FinishJudgement", true);
         judgementManager = GameObject.Find("JudgementManager");
+        CountSoul = GameObject.Find("CountJudgmenet");
         if (JudgeLetItOut)
         {
-            judgementManager.GetComponent<JudgementPanel>().DeactivePanelLetItOut(animator);        
+            judgementManager.GetComponent<JudgementPanel>().DeactivePanelLetItOut(animator);
+            CountSoul.GetComponent<CountJudgementAnimelle>().CountUpSpare();
         }
         else
         {
