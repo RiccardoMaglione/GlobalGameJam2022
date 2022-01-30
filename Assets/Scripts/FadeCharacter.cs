@@ -20,9 +20,9 @@ public class FadeCharacter : MonoBehaviour
 
     public void FunctionFadeDialogue(Image[] FadeDialogueTemp, Animator anim)
     {
-        anim.SetBool("test", true);
+        //anim.SetBool("test", true);
         StartCoroutine(IntroductionAndOther(FadeDialogueTemp, anim));
-        anim.SetBool("test", false);
+        //anim.SetBool("test", false);
 
     }
 
