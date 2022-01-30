@@ -4,13 +4,17 @@ using UnityEngine.UI;
 public class DisplayLine : StateMachineBehaviour
 {
     enum Panel { Left, Center, Right, Player };
-    
-    [SerializeField] string sentence; 
+
+    [SerializeField] string sentence;
     [SerializeField] Panel panelPosition;
 
     GameObject chosenPanel;
     Text panelText;
     GameObject fiot;
+
+    CharactersManager characterManager;
+    ButtonManager buttonManager;
+
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         fiot = GameObject.Find("FadeManager");
@@ -20,11 +24,11 @@ public class DisplayLine : StateMachineBehaviour
         panelText.enabled = true;
         panelText.text = sentence;
 
-        if(animator.GetCurrentAnimatorStateInfo(0).IsName("New State 0 0 1 0 0 1 0 0"))
-        {
-            fiot.GetComponent<FadeObject>().PanelBlack.SetActive(true);
-            fiot.GetComponent<FadeObject>().FadeImage(fiot.GetComponent<FadeObject>().PanelBlack);
-        }
+        //if (animator.GetCurrentAnimatorStateInfo(0).IsName("fade"))
+        //{
+        //    fiot.GetComponent<FadeObject>().PanelBlack.SetActive(true);
+        //    fiot.GetComponent<FadeObject>().FadeImage(fiot.GetComponent<FadeObject>().PanelBlack);
+        //}
     }
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

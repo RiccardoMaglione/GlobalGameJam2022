@@ -37,7 +37,7 @@ public class EndDialogue : StateMachineBehaviour
 
         panelText = chosenPanel.GetComponentInChildren<Text>();
         letItOutButtonText = letItOut.GetComponentInChildren<Text>();
-        condemnButtonText = letItOut.GetComponentInChildren<Text>();
+        condemnButtonText = condemn.GetComponentInChildren<Text>();
 
         letItOut.GetComponent<Image>().enabled = true;
         condemn.GetComponent<Image>().enabled = true;

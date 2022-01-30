@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 public class CharactersManager : MonoBehaviour
 {
     public GameObject[] characters;
