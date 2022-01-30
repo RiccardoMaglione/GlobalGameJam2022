@@ -57,7 +57,7 @@ public class FadeObject : MonoBehaviour
         CanChangeDialogue = false;
         ObjectToFade.GetComponent<Image>().CrossFadeAlpha(0, 0f, false);
         yield return new WaitForSeconds(BlackPanelTimeToWait);
-        ObjectToFade.GetComponent<Image>().CrossFadeAlpha(1, 1f, false);
+        ObjectToFade.GetComponent<Image>().CrossFadeAlpha(1, 0.5f, false);
     }
 
     public IEnumerator FadeInChangeDialogueIEnum(GameObject ObjectToFade, Color ColorToAlpha)
