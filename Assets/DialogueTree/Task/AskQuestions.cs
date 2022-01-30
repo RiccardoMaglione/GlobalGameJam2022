@@ -14,9 +14,12 @@ public class AskQuestions : StateMachineBehaviour
 
     GameObject chosenPanel;
     Text panelText;
-
+    GameObject FadeObjectObject;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        FadeObjectObject = GameObject.Find("FadeManager");
+        FadeObjectObject.GetComponent<FadeObject>().PanelBlack.SetActive(false);
+
         animator.SetBool("test", true);
         if (leftQuestions.Length != 0)
         {
