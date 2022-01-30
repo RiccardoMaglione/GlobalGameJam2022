@@ -35,6 +35,15 @@ public partial class @InputManager : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""BackEscape"",
+                    ""type"": ""Button"",
+                    ""id"": ""8f503551-5dab-4020-adfd-f6758e3e07f2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -48,6 +57,17 @@ public partial class @InputManager : IInputActionCollection2, IDisposable
                     ""action"": ""NextLine"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4fd76186-b1d7-4a48-a16b-7e63808c9381"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""BackEscape"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -57,6 +77,7 @@ public partial class @InputManager : IInputActionCollection2, IDisposable
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_NextLine = m_Player.FindAction("NextLine", throwIfNotFound: true);
+        m_Player_BackEscape = m_Player.FindAction("BackEscape", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -117,11 +138,13 @@ public partial class @InputManager : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Player;
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_NextLine;
+    private readonly InputAction m_Player_BackEscape;
     public struct PlayerActions
     {
         private @InputManager m_Wrapper;
         public PlayerActions(@InputManager wrapper) { m_Wrapper = wrapper; }
         public InputAction @NextLine => m_Wrapper.m_Player_NextLine;
+        public InputAction @BackEscape => m_Wrapper.m_Player_BackEscape;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -134,6 +157,9 @@ public partial class @InputManager : IInputActionCollection2, IDisposable
                 @NextLine.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNextLine;
                 @NextLine.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNextLine;
                 @NextLine.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNextLine;
+                @BackEscape.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBackEscape;
+                @BackEscape.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBackEscape;
+                @BackEscape.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBackEscape;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -141,6 +167,9 @@ public partial class @InputManager : IInputActionCollection2, IDisposable
                 @NextLine.started += instance.OnNextLine;
                 @NextLine.performed += instance.OnNextLine;
                 @NextLine.canceled += instance.OnNextLine;
+                @BackEscape.started += instance.OnBackEscape;
+                @BackEscape.performed += instance.OnBackEscape;
+                @BackEscape.canceled += instance.OnBackEscape;
             }
         }
     }
@@ -148,5 +177,6 @@ public partial class @InputManager : IInputActionCollection2, IDisposable
     public interface IPlayerActions
     {
         void OnNextLine(InputAction.CallbackContext context);
+        void OnBackEscape(InputAction.CallbackContext context);
     }
 }
