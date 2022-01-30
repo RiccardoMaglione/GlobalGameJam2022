@@ -7,7 +7,6 @@ public class InputController : MonoBehaviour
 
     [SerializeField] Animator[] dialogues;
     [HideInInspector] public int i = 0;
-
     void Awake()
     {
         inputManager = new InputManager();
@@ -27,6 +26,10 @@ public class InputController : MonoBehaviour
 
     void DisplayNextLine(InputAction.CallbackContext obj)
     {
-        dialogues[i].SetBool("NextLine", true);
+        if (dialogues[i].GetBool("test") == false)
+        {
+            dialogues[i].SetBool("NextLine", true);
+        }
+
     }
 }

@@ -1,11 +1,12 @@
 using UnityEngine;
+using System.Collections;
 
 public class ButtonManager : MonoBehaviour
 {
     CharactersManager charactersManager;
     Animator[] anim;
     [HideInInspector] public int i = 0;
-    GameObject judgementManager;
+    //GameObject judgementManager;
     void Awake()
     {
         
@@ -16,7 +17,7 @@ public class ButtonManager : MonoBehaviour
             anim[i] = charactersManager.characters[i].GetComponentInChildren<Animator>();
         }
 
-        judgementManager = GameObject.Find("JudgementManager");
+        //judgementManager = GameObject.Find("JudgementManager");
     }
 
 
@@ -50,14 +51,12 @@ public class ButtonManager : MonoBehaviour
     public void LetItOutButton()
     {
         anim[i].SetBool("LetItOut", true);
-        print("salvo");
-        judgementManager.GetComponent<JudgementPanel>().DeactivePanelLetItOut();
+        //judgementManager.GetComponent<JudgementPanel>().DeactivePanelLetItOut();
     }
 
     public void CondemnButton()
     {
         anim[i].SetBool("Condemn", true);
-        print("condannato");
-        judgementManager.GetComponent<JudgementPanel>().DeactivePanelCondamn();
+        //judgementManager.GetComponent<JudgementPanel>().DeactivePanelCondamn();
     }
 }

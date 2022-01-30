@@ -21,14 +21,19 @@ public class EndDialogue : StateMachineBehaviour
     Text condemnButtonText;
 
     public Color test;
+    GameObject judgementManager;
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        animator.SetBool("test", true);
+
         letItOut = GameObject.Find("LetItOut");
         condemn = GameObject.Find("Condemn");
         chosenPanel = GameObject.Find("Center");
 
         fadeManager = GameObject.Find("FadeManager");
+        judgementManager = GameObject.Find("JudgementManager");
+
 
         panelText = chosenPanel.GetComponentInChildren<Text>();
         letItOutButtonText = letItOut.GetComponentInChildren<Text>();
@@ -57,7 +62,6 @@ public class EndDialogue : StateMachineBehaviour
     {
         animator.SetBool("Condemn", false);
         animator.SetBool("LetItOut", false);
-
         letItOut.GetComponent<Image>().enabled = false;
         condemn.GetComponent<Image>().enabled = false;
         chosenPanel.GetComponent<Image>().enabled = false;

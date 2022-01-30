@@ -8,7 +8,6 @@ public class CharactersManager : MonoBehaviour
 
     private void Awake()
     {
-
         inputController = FindObjectOfType<InputController>();
     }
 
