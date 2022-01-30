@@ -13,7 +13,7 @@ public class ChangeScene : StateMachineBehaviour
 
         if (CountJudge.GetComponent<CountJudgementAnimelle>().CountSpare == 1 || CountJudge.GetComponent<CountJudgementAnimelle>().CountSpare == 2)
         {
-            SceneManager.LoadScene(CountJudge.GetComponent<CountJudgementAnimelle>().NameGameover12);
+            SceneManager.LoadScene(CountJudge.GetComponent<CountJudgementAnimelle>().NameGameover56);
         }
         if (CountJudge.GetComponent<CountJudgementAnimelle>().CountSpare == 3 || CountJudge.GetComponent<CountJudgementAnimelle>().CountSpare == 4)
         {
@@ -21,7 +21,7 @@ public class ChangeScene : StateMachineBehaviour
         }
         if (CountJudge.GetComponent<CountJudgementAnimelle>().CountSpare == 5 || CountJudge.GetComponent<CountJudgementAnimelle>().CountSpare == 6)
         {
-            SceneManager.LoadScene(CountJudge.GetComponent<CountJudgementAnimelle>().NameGameover56);
+            SceneManager.LoadScene(CountJudge.GetComponent<CountJudgementAnimelle>().NameGameover12);
         }
 
 
