@@ -12,6 +12,7 @@ public class PanelJudgementState : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        AudioManager.instance.Play("giudicato");
         animator.SetBool("FinishJudgement", true);
         judgementManager = GameObject.Find("JudgementManager");
         CountSoul = GameObject.Find("CountJudgmenet");

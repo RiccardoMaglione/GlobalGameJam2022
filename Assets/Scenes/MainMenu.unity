@@ -277,7 +277,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 99.79999, y: -270}
+  m_AnchoredPosition: {x: 99.80005, y: -270}
   m_SizeDelta: {x: 810.6694, y: 125}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &389742041
@@ -576,7 +576,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -102.806, y: -90, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 33.0001, y: 237.9999}
+  m_AnchoredPosition: {x: 33.000122, y: 237.99988}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!199 &545639215
@@ -5516,9 +5516,9 @@ MonoBehaviour:
   master: 1
   masterSlider: {fileID: 2060898485}
   music: 0
-  musicSlider: {fileID: 0}
+  musicSlider: {fileID: 2060898485}
   sfx: 0
-  sfxSlider: {fileID: 0}
+  sfxSlider: {fileID: 2060898485}
 --- !u!4 &603131309
 Transform:
   m_ObjectHideFlags: 0
@@ -5562,7 +5562,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8609f86f3747446bfb73242e6cd2ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: giudicato
+    clip: {fileID: 8300000, guid: 6eeda52ed11bf58408b476801225286f, type: 3}
+    loop: 0
+    type: 0
+    source: {fileID: 0}
+  - name: desktop
+    clip: {fileID: 8300000, guid: dc0f4e5e3f8ab264ab90f7e894746701, type: 3}
+    loop: 1
+    type: 0
+    source: {fileID: 0}
 --- !u!4 &611437674
 Transform:
   m_ObjectHideFlags: 0
@@ -6074,7 +6084,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -110.965, y: -90, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -816, y: -203.99997}
+  m_AnchoredPosition: {x: -816, y: -204}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!199 &949462026
@@ -11680,7 +11690,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -102.806, y: -90, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -101.99981, y: -86.00002}
+  m_AnchoredPosition: {x: -101.999756, y: -86}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!199 &1500307851
@@ -16622,7 +16632,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -110.965, y: -90, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -442.00003, y: -67.99997}
+  m_AnchoredPosition: {x: -442, y: -68}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!199 &1563283513
