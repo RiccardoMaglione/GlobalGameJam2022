@@ -17,6 +17,7 @@ public class AskQuestions : StateMachineBehaviour
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        animator.SetBool("test", true);
         if (leftQuestions.Length != 0)
         {
             chosenPanel = GameObject.Find("Left");
@@ -122,5 +123,6 @@ public class AskQuestions : StateMachineBehaviour
         animator.SetBool("FirstQuestion", false);
         animator.SetBool("SecondQuestion", false);
         animator.SetBool("ThirdQuestion", false);
+        animator.SetBool("test", false);
     }
 }
