@@ -5,18 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class CountJudgementAnimelle : MonoBehaviour
 {
-    public int CountSpare;
+    public int CountSpared;
     public string NameGameover12;
     public string NameGameover34;
     public string NameGameover56;
 
-    void Update()
+    public void CountUpSpared()
     {
-
-    }
-
-    public void CountUpSpare()
-    {
-        CountSpare += 1;
+        CountSpared += 1;
     }
 }

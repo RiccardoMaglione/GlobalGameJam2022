@@ -5,25 +5,32 @@ using UnityEngine;
 public class PanelJudgementState : StateMachineBehaviour
 {
     GameObject judgementManager;
-    public bool JudgeLetItOut;
-    public float timer;
     GameObject CountSoul;
+    public bool JudgeSpared;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        AudioManager.instance.Play("giudicato");
+        if(AudioManager.instance != null)
+        {
+            AudioManager.instance.Play("giudicato");
+        }
+        
         animator.SetBool("FinishJudgement", true);
+        
         judgementManager = GameObject.Find("JudgementManager");
         CountSoul = GameObject.Find("CountJudgmenet");
-        if (JudgeLetItOut)
+
+        if (JudgeSpared)
         {
-            judgementManager.GetComponent<JudgementPanel>().DeactivePanelLetItOut(animator);
-            CountSoul.GetComponent<CountJudgementAnimelle>().CountUpSpare();
+            Debug.Log("Spared");
+            judgementManager.GetComponent<JudgementPanel>().DeactivePanelSpared(animator);
+            CountSoul.GetComponent<CountJudgementAnimelle>().CountUpSpared();
         }
         else
         {
-            judgementManager.GetComponent<JudgementPanel>().DeactivePanelCondamn(animator);
+            Debug.Log("Devoured");
+            judgementManager.GetComponent<JudgementPanel>().DeactivePanelDevoured(animator);
         }
     }
 

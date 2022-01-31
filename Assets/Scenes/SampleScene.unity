@@ -1660,7 +1660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e915227cf744f40826a55a0e8946d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CountSpare: 0
+  CountSpared: 0
   NameGameover12: Finale1
   NameGameover34: Finale2
   NameGameover56: Finale3
@@ -1845,7 +1845,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -33.508, y: -90, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 299.99994, y: -70}
+  m_AnchoredPosition: {x: 300, y: -70}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!199 &599216306
@@ -6897,7 +6897,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -136.756, y: -90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -299.99994, y: -70}
+  m_AnchoredPosition: {x: -300, y: -70}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!199 &871785357
@@ -12320,8 +12320,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ab0ae7703f0f14094020a929f10407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PanelJudgeLetItOut: {fileID: 1006692306}
-  PanelJudgeCondamn: {fileID: 1885320174}
+  PanelJudgeSpared: {fileID: 1885320174}
+  PanelJudgeDevoured: {fileID: 1006692306}
+  TimeDeactivatePanelSpared: 3
+  TimeDeactivatePanelDevoured: 3
 --- !u!1 &1006692306
 GameObject:
   m_ObjectHideFlags: 0
@@ -12334,7 +12336,7 @@ GameObject:
   - component: {fileID: 1006692309}
   - component: {fileID: 1006692308}
   m_Layer: 5
-  m_Name: PanelLetItOut
+  m_Name: PanelDevoured
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13640,7 +13642,7 @@ GameObject:
   - component: {fileID: 1885320177}
   - component: {fileID: 1885320176}
   m_Layer: 5
-  m_Name: PanelCondemn
+  m_Name: PanelSpared
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
