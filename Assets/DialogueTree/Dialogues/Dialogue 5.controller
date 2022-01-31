@@ -1321,7 +1321,7 @@ AnimatorStateTransition:
     m_ConditionEvent: AnimelleParameters
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -72453076857173162}
+  m_DstState: {fileID: 0}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -2616,7 +2616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftQuestions:
   - Poor soul, tell me why I should get you out of here.
-  - Come sei morto?
+  - How did you die?
   centerQuestions:
   - Tormented soul, tell me your punishment.
   rightQuestions:
