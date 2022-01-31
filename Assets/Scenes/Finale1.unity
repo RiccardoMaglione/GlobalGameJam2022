@@ -202,9 +202,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "The Cerberus did his duty as best he could, Hades from the depths of Tartarus
     congratulates him on the work done. It's often hard to say no, but rules are
-    there to keep a balance in the world and someone has to make sure they are respected.\r\n\r\nThanks
-    for playing \u201CCerberus Dilemma\u201D.\r\nIf you are interested in seeing
-    the answers of other players you can fill out the form on the itch.io page.\r\n"
+    there to keep a balance in the world and someone has to make sure they are respected.\r\n\r\nIf
+    you are interested in seeing the answers of other players you can fill out the
+    form on the itch.io page.\r\n\n\nThanks for playing \"Cerberus Dilemma\u201D!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8892660144e1e394f8795ed4e428d6ea, type: 2}
   m_sharedMaterial: {fileID: -8425439283701500781, guid: 8892660144e1e394f8795ed4e428d6ea, type: 2}
