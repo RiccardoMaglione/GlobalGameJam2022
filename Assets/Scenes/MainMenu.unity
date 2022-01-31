@@ -626,7 +626,7 @@ ParticleSystemRenderer:
   m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
-  m_LengthScale: 4
+  m_LengthScale: 2
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_ShadowBias: 0
@@ -5472,7 +5472,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584846342}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -5481,7 +5481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -50, y: 2}
+  m_AnchoredPosition: {x: -50, y: 0}
   m_SizeDelta: {x: 83, y: 182}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &603131307
@@ -5765,7 +5765,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -42, y: 2}
+  m_AnchoredPosition: {x: -41.60009, y: 0.000030517578}
   m_SizeDelta: {x: 83, y: 182}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &860641492
@@ -5878,8 +5878,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 50, y: 15}
-  m_SizeDelta: {x: 356, y: 125}
+  m_AnchoredPosition: {x: 99, y: 23}
+  m_SizeDelta: {x: 301.12, y: 105.73}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &911476902
 MonoBehaviour:
@@ -6009,7 +6009,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -121, y: 2}
+  m_AnchoredPosition: {x: -117.99994, y: 0}
   m_SizeDelta: {x: 83, y: 182}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &944505427
@@ -6084,7 +6084,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -110.965, y: -90, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -816, y: -204}
+  m_AnchoredPosition: {x: -730, y: -209}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!199 &949462026
@@ -6134,7 +6134,7 @@ ParticleSystemRenderer:
   m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
-  m_LengthScale: 4
+  m_LengthScale: 2
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_ShadowBias: 0
@@ -6867,7 +6867,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 1.8
       mode: 0
       spread: 0
       speed:
@@ -11223,8 +11223,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 50, y: 15}
-  m_SizeDelta: {x: 356, y: 125}
+  m_AnchoredPosition: {x: 99, y: 23}
+  m_SizeDelta: {x: 301.12, y: 105.73}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1049947748
 MonoBehaviour:
@@ -11615,7 +11615,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -107, y: 2}
+  m_AnchoredPosition: {x: -106.799866, y: 0}
   m_SizeDelta: {x: 83, y: 182}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1455004939
@@ -11740,7 +11740,7 @@ ParticleSystemRenderer:
   m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
-  m_LengthScale: 4
+  m_LengthScale: 2
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_ShadowBias: 0
@@ -16682,7 +16682,7 @@ ParticleSystemRenderer:
   m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
-  m_LengthScale: 4
+  m_LengthScale: 2
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_ShadowBias: 0
