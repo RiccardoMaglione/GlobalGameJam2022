@@ -260,8 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3c6a3d2bba1524bb83b4538a87f66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JudgeLetItOut: 0
-  timer: 0
+  JudgeSpared: 1
 --- !u!1101 &-6869334027476581285
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1680,7 +1679,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Panel Condemn
+  m_Name: Panel Spared State
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2169,8 +2168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3c6a3d2bba1524bb83b4538a87f66e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JudgeLetItOut: 1
-  timer: 0
+  JudgeSpared: 0
 --- !u!114 &4011835783352581633
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2819,7 +2817,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Panel Let it Out
+  m_Name: Panel Devoured State
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:

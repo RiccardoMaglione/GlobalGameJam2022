@@ -20,10 +20,7 @@ public class FadeCharacter : MonoBehaviour
 
     public void FunctionFadeDialogue(Image[] FadeDialogueTemp, Animator anim)
     {
-        //anim.SetBool("test", true);
         StartCoroutine(IntroductionAndOther(FadeDialogueTemp, anim));
-        //anim.SetBool("test", false);
-
     }
 
     public IEnumerator IntroductionAndOther(Image[] FadeDialogueTemp, Animator anim)
@@ -73,7 +70,7 @@ public class FadeCharacter : MonoBehaviour
         }
         for (int i = 0; i < FadeDialogue2.Length; i++)
         {
-            FadeDialogue3[i].gameObject.SetActive(false);
+            FadeDialogue2[i].gameObject.SetActive(false);
         }
         for (int i = 0; i < FadeDialogue3.Length; i++)
         {
