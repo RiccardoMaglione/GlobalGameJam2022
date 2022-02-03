@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I know I was wrong, and I regret it. I intend to make up for this.
+  sentence: So di aver sbagliato e me ne pento. Ho intenzione di rimediare.
   panelPosition: 3
 --- !u!1101 &-7261480118608548863
 AnimatorStateTransition:
@@ -378,7 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: It seems like a fair punishment for what you did.
+  sentence: "Mi sembra in linea con ci\xF2 che hai fatto."
   panelPosition: 1
 --- !u!1101 &-5617036398979770021
 AnimatorStateTransition:
@@ -622,7 +622,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I stole a freshly buried corpse from the cemetery to sell it to a cult.
+  sentence: Ho trafugato un cadavere appena sepolto dal cimitero, per venderlo a
+    una setta.
   panelPosition: 3
 --- !u!114 &-2555549904449583980
 MonoBehaviour:
@@ -636,7 +637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: You probably have done something very serious to deserve it.
+  sentence: Avrai fatto qualcosa di molto grave per meritarlo.
   panelPosition: 1
 --- !u!114 &-2203473021819003421
 MonoBehaviour:
@@ -650,7 +651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68f554ce225bf74c80644ae8981e0e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: We believe we have enough information to make a judgment.
+  sentence: Crediamo di aver abbastanza informazioni per formulare un giudizio.
   test: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1102 &-1980019113721809464
 AnimatorState:
@@ -693,7 +694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Deny the opportunity of redemption doesn't seem fair to me.
+  sentence: "Negare la possibilit\xE0 di redimersi non mi sembra corretto."
   panelPosition: 0
 --- !u!114 &-1820933757487001809
 MonoBehaviour:
@@ -821,7 +822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: WE' LL FIND OUT WHEN HE WILL RETURN TO HADES.
+  sentence: LO SCOPRIREMO QUANDO TORNERA' NELL'ADE.
   panelPosition: 2
 --- !u!1102 &-957816219366243206
 AnimatorState:
@@ -882,7 +883,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dialogue 2
+  m_Name: Dialogue 2 ITA
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: NextLine
@@ -988,7 +989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: A WICKED THING LIKE WHAT YOU DID CANNOT BE REMEDIED EASILY.
+  sentence: TROVO DIFFICILE IL RIMEDIARE A UNA COSA COSI' DEVIATA.
   panelPosition: 2
 --- !u!114 &730611313174807807
 MonoBehaviour:
@@ -1003,11 +1004,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftQuestions:
-  - Poor soul, tell me why I should get you out of here.
+  - "Povera anima, dimmi perch\xE8 dovrei farti uscire da qui."
   centerQuestions:
-  - Tormented soul, tell me your punishment.
+  - "Anima tormentata, dimmi qual \xE8 la tua punizione."
   rightQuestions:
-  - YOU, FILTHY SOUL, WHAT YOU WERE JUDGED FOR?
+  - 'TU, SCHIFOSA ANIMA, DIMMI PER CHE COSA SEI STATA GIUDICATA '
 --- !u!1102 &732675094684559891
 AnimatorState:
   serializedVersion: 6
@@ -1073,7 +1074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: The majority has ruled.
+  sentence: La maggioranza ha deciso.
   panelPosition: 1
 --- !u!1102 &1487709617583470546
 AnimatorState:
@@ -1115,7 +1116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I want to retrieve the body and bring it back to his loved ones.
+  sentence: Voglio recuperare il corpo e restituirlo ai familiari.
   panelPosition: 3
 --- !u!114 &1705371241603904175
 MonoBehaviour:
@@ -1129,7 +1130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I am curious about what you have to say.
+  sentence: Io sono curioso di sapere cosa hai da dire.
   panelPosition: 0
 --- !u!1101 &1792375444731909459
 AnimatorStateTransition:
@@ -1210,7 +1211,7 @@ AnimatorStateMachine:
     m_Position: {x: -770, y: 250, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4811035282131770794}
-    m_Position: {x: -530, y: -230, z: 0}
+    m_Position: {x: -530, y: -240, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3633185017681471772}
     m_Position: {x: -1150, y: 250, z: 0}
@@ -1255,7 +1256,7 @@ AnimatorStateMachine:
     m_Position: {x: -760, y: -110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6655268031448897047}
-    m_Position: {x: 260, y: -240, z: 0}
+    m_Position: {x: 250, y: -240, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -957816219366243206}
     m_Position: {x: -970, y: -640, z: 0}
@@ -1284,7 +1285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: WHAT YOU HAVE DONE IS DEPLORABLE. YOU DISGUST ME.
+  sentence: QUELLO CHE HAI FATTO E' DEPLOREVOLE. MI FAI SCHIFO.
   panelPosition: 2
 --- !u!1101 &2402021260962025513
 AnimatorStateTransition:
@@ -1376,7 +1377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I appreciate it, but maybe it's too late.
+  sentence: "Apprezzo, ma forse \xE8 un po' troppo tardi."
   panelPosition: 0
 --- !u!1102 &3633185017681471772
 AnimatorState:
@@ -1550,8 +1551,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I was confined to Tartarus, where an evil cult of violent souls tore
-    my body apart in an eternal pagan rite.
+  sentence: Sono stato confinato nel Tartaro, dove una setta di anime violente mi
+    dilaniano il corpo in un eterno.
   panelPosition: 3
 --- !u!114 &5394212219564862806
 MonoBehaviour:
@@ -1565,8 +1566,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I have caused so much pain to that family.  I will become an undertaker
-    and give my income to them.
+  sentence: "Diventer\xF2 un becchino e dar\xF2 il mio guadagno a quella famiglia
+    a cui ho arrecato tanto dolore."
   panelPosition: 3
 --- !u!1101 &5760339106833211993
 AnimatorStateTransition:
@@ -1851,7 +1852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: HE SHOULD HAVE THOUGHT SBOUT IT FIRTS.
+  sentence: AVREBBE DOVUTO PENSARCI PRIMA.
   panelPosition: 2
 --- !u!1102 &7423340003508434745
 AnimatorState:
@@ -1974,7 +1975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I hope he will make good on his promise.
+  sentence: Spero che onori la sua promessa.
   panelPosition: 0
 --- !u!1101 &8044227133375798661
 AnimatorStateTransition:
