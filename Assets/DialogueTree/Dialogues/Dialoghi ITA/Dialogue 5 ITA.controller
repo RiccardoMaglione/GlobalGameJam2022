@@ -37,7 +37,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "I\u2019m taking an unfair punishment for a minor crime."
+  sentence: Sto sopportando una pena troppo ingiusta per un atto di poco conto.
   panelPosition: 3
 --- !u!114 &-8818357197726326412
 MonoBehaviour:
@@ -113,8 +113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "I stole a purse from an old woman, but I don\u2019t feel I deserve what
-    I\u2019m going through."
+  sentence: "I stole a purseHo rubato la borsa a una signora, \xE8 vero, ma non credo
+    di meritarmi quello che sto passando."
   panelPosition: 3
 --- !u!1102 &-7874891099076019512
 AnimatorState:
@@ -216,8 +216,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: According to doctors, my body could be a precious resource to develop
-    a cure for cancer.
+  sentence: Secondo i medici, il mio corpo potrebbe essere una preziosissima risorsa
+    per sviluppare una cura per il cancro
   panelPosition: 3
 --- !u!1102 &-7392582851723642696
 AnimatorState:
@@ -323,8 +323,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "The sentences are almost always proper, but I\u2019m curious to know
-    your guilt."
+  sentence: Le pene che vengono date difficilmente sono sbagliate, ma sono curioso
+    di sapere quali sono le tue colpe.
   panelPosition: 1
 --- !u!1101 &-6235085753451233100
 AnimatorStateTransition:
@@ -388,7 +388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68f554ce225bf74c80644ae8981e0e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Your fate has been chosen.
+  sentence: "Il tuo destino \xE8 stato scelto."
   test: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1101 &-5562000308093821541
 AnimatorStateTransition:
@@ -736,7 +736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: THIS WILL AFFECT THE MORTAL WORLD.
+  sentence: "QUESTA SCELTA SI RIPERCUOTER\xC0 NEL MONDO DEI MORTALI."
   panelPosition: 2
 --- !u!1102 &-2953437105234990575
 AnimatorState:
@@ -840,8 +840,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I know that you think what I am going through is excessive concerning
-    what I have done.
+  sentence: "So che anche tu pensi che sia eccessivo ci\xF2 che sto passando in relazione
+    a quello che ho fatto."
   panelPosition: 3
 --- !u!1101 &-1601205490155473042
 AnimatorStateTransition:
@@ -1011,7 +1011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: The majority has ruled.
+  sentence: La maggioranza ha deciso.
   panelPosition: 1
 --- !u!1101 &-995915358369914476
 AnimatorStateTransition:
@@ -1050,7 +1050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I think he may be right.
+  sentence: "Per\xF2 quest' anima potrebbe avere ragione."
   panelPosition: 0
 --- !u!1101 &-965426181693999504
 AnimatorStateTransition:
@@ -1117,7 +1117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "He didn\u2019t deserve what he was going through."
+  sentence: Non si meritava quello che stava passando.
   panelPosition: 0
 --- !u!1101 &-661012317768334886
 AnimatorStateTransition:
@@ -1206,7 +1206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "I think it\u2019s too much for what he did."
+  sentence: Mi pare eccessivo per quello che ha fatto.
   panelPosition: 3
 --- !u!91 &9100000
 AnimatorController:
@@ -1372,7 +1372,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 7824605558377491835}
+  - {fileID: 5377208730323868893}
   m_StateMachineBehaviours:
   - {fileID: 3088370787064667866}
   m_Position: {x: 50, y: 50, z: 0}
@@ -1451,7 +1451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: This could help a lot of people.
+  sentence: Questo potrebbe aiutare molte persone.
   panelPosition: 0
 --- !u!1102 &671276649386579571
 AnimatorState:
@@ -1518,8 +1518,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: There are souls here in Hades who have done far worse things than me,
-    but some of them are in the Asphodel Fields anyway.
+  sentence: "Ci sono delle anime qui nell'Ade che hanno fatto cose molto peggiori
+    di me, ma a cui \xE8 stato concesso l'Asfodelo."
   panelPosition: 3
 --- !u!1101 &723443330400979752
 AnimatorStateTransition:
@@ -1617,7 +1617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: 'Well, you heard what I said to the others... '
+  sentence: Beh, hai sentito quello che ho detto agli altri...
   panelPosition: 3
 --- !u!1101 &1049262276727084033
 AnimatorStateTransition:
@@ -1770,7 +1770,7 @@ AnimatorStateMachine:
     m_Position: {x: -500, y: -40, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 254808719804865962}
-    m_Position: {x: 130, y: -150, z: 0}
+    m_Position: {x: 140, y: -190, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 671276649386579571}
     m_Position: {x: 1100, y: -150, z: 0}
@@ -1868,7 +1868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: IT WAS TO SERVE A GREATER GOOD.
+  sentence: ERA PER UN BENE SUPERIORE.
   panelPosition: 2
 --- !u!1101 &2390483493843086980
 AnimatorStateTransition:
@@ -2010,8 +2010,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I was condemned to die atrociously at the hands of the Furies in Tartarus, 
-    for eternity.
+  sentence: 'Sono stato rinchiuso nel Tartaro, condannato in eterno a morire atrocemente
+    per mano delle Furie. '
   panelPosition: 3
 --- !u!1101 &3142904048634009520
 AnimatorStateTransition:
@@ -2181,7 +2181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "Despite everything,  I\u2019m not sure it\u2019s right."
+  sentence: Nonostate tutto non sono sicuro sia giusto.
   panelPosition: 0
 --- !u!1102 &4390749854902435270
 AnimatorState:
@@ -2251,7 +2251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: The torment reserved to me is inhuman and unjust.
+  sentence: "Il tormento che mi \xE8 stato riservato \xE8 una brutalit\xE0 disumana."
   panelPosition: 3
 --- !u!1102 &4479486700687597861
 AnimatorState:
@@ -2341,7 +2341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: You're not the one that has to make the decision.
+  sentence: Ma non sei tu a dover decidere la punizione.
   panelPosition: 1
 --- !u!1102 &5274300624301702304
 AnimatorState:
@@ -2421,6 +2421,31 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &5377208730323868893
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextLine
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -3258820986246033448}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1102 &5398166029545435485
 AnimatorState:
   serializedVersion: 6
@@ -2487,7 +2512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: DECIDING WHAT YOU DESERVE IS NOT UP TO YOU.
+  sentence: NON STA A TE DECIDERE COSA TI MERITI O NON TI MERITI.
   panelPosition: 2
 --- !u!1102 &6271602833342408516
 AnimatorState:
@@ -2659,8 +2684,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I remember I was in surgery to donate for an experiment in the medical
-    field.
+  sentence: Ricordo che ero in sala operatoria per la donazione per un esperimento
+    nel campo medico.
   panelPosition: 3
 --- !u!1101 &7463540841254135885
 AnimatorStateTransition:
@@ -2716,31 +2741,6 @@ AnimatorStateTransition:
   m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 0
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &7824605558377491835
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: NextLine
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -3258820986246033448}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0.75
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -2808,7 +2808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I can't take it anymore... It's unbearable suffering.
+  sentence: "Non ce la faccio, \xE8 una sofferenza insopportabile."
   panelPosition: 3
 --- !u!1102 &8508875822775628042
 AnimatorState:

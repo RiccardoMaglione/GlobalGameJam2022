@@ -822,7 +822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: LO SCOPRIREMO QUANDO TORNERA' NELL'ADE.
+  sentence: "LO SCOPRIREMO QUANDO TORNER\xC0 NELL'ADE."
   panelPosition: 2
 --- !u!1102 &-957816219366243206
 AnimatorState:
@@ -989,7 +989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: TROVO DIFFICILE IL RIMEDIARE A UNA COSA COSI' DEVIATA.
+  sentence: "TROVO DIFFICILE IL RIMEDIARE A UNA COSA COS\xCD DEVIATA."
   panelPosition: 2
 --- !u!114 &730611313174807807
 MonoBehaviour:
@@ -1285,7 +1285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: QUELLO CHE HAI FATTO E' DEPLOREVOLE. MI FAI SCHIFO.
+  sentence: "QUELLO CHE HAI FATTO \xC8 DEPLOREVOLE. MI FAI SCHIFO."
   panelPosition: 2
 --- !u!1101 &2402021260962025513
 AnimatorStateTransition:

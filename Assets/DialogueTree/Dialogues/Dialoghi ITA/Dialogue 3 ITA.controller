@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: TI E' ANDATA ANCHE BENE CHE TU SIA STATA CONDANNATA ALL'ASFODELO.
+  sentence: "TI \xC8 ANDATA ANCHE BENE CHE TU SIA STATA CONDANNATA ALL'ASFODELO."
   panelPosition: 2
 --- !u!1101 &-8420232567757339678
 AnimatorStateTransition:
@@ -1779,7 +1779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: HA AVUTO CIO' CHE SI MERITAVA
+  sentence: "HA AVUTO CI\xD3 CHE SI MERITAVA"
   panelPosition: 2
 --- !u!1102 &2811295278431945733
 AnimatorState:

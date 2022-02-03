@@ -243,8 +243,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "I\u2019ve never done any crime, but if you let me through, I would definitely
-    commit one."
+  sentence: Non ho crimini alle spalle, ma se mi lasciaste passare ne commetterei
+    sicuramente uno.
   panelPosition: 3
 --- !u!1102 &-8304042851097644155
 AnimatorState:
@@ -336,7 +336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Taking the souls of others is not your responsibility.
+  sentence: "Ma prendersi le anime degli altri non \xE8 una tua responsabilit\xE0."
   panelPosition: 1
 --- !u!1102 &-8159672631745572637
 AnimatorState:
@@ -614,7 +614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "If I can get out of this place, I\u2019ll kill him."
+  sentence: "Se riesco ad andarmene da questo posto lo uccider\xF2."
   panelPosition: 3
 --- !u!1102 &-6534435901697760892
 AnimatorState:
@@ -933,7 +933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I COMMEND YOU ON YOUR RESOLVE.
+  sentence: APPREZZO LA TUA RISOLUTEZZA.
   panelPosition: 2
 --- !u!114 &-5041183603521972936
 MonoBehaviour:
@@ -947,7 +947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Revenge is never fair.
+  sentence: "La vendetta non \xE8 mai giusta."
   panelPosition: 0
 --- !u!114 &-5031564253010417084
 MonoBehaviour:
@@ -1151,7 +1151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Revenge is never fair.
+  sentence: "La vendetta non \xE8 mai giusta."
   panelPosition: 0
 --- !u!1101 &-4447155243768445134
 AnimatorStateTransition:
@@ -1215,7 +1215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: That filthy bastard raped my kids and killed them.
+  sentence: 'Quello schifoso bastardo ha stuprato i miei figli e li ha uccisi. '
   panelPosition: 3
 --- !u!1101 &-3922008507175889534
 AnimatorStateTransition:
@@ -1979,7 +1979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Someone told me that I'm forced to live in the Asphodel Fields for eternity.
+  sentence: "Mi \xE8 stato detto che avrei trascorso l'eternit\xE0 nell'Asfodelo."
   panelPosition: 3
 --- !u!1101 &-2334552972923153993
 AnimatorStateTransition:
@@ -2070,7 +2070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: The majority has ruled.
+  sentence: La maggioranza ha deciso.
   panelPosition: 1
 --- !u!1102 &-1921740570173581269
 AnimatorState:
@@ -2309,7 +2309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: When I tried to stop it, he killed me.
+  sentence: E quando ho provato a impedirlo, ha ucciso anche me.
   panelPosition: 3
 --- !u!1101 &-1354419258251262001
 AnimatorStateTransition:
@@ -2574,7 +2574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68f554ce225bf74c80644ae8981e0e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: We have come to a conclusion.
+  sentence: Siamo giunti a una conclusione.
   test: {r: 1, g: 1, b: 1, a: 0}
 --- !u!114 &-780721511602990135
 MonoBehaviour:
@@ -3568,7 +3568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: ASPHODEL WILL NOT BE ENOUGH IF YOU RETALIATE.
+  sentence: "L'ASFODELO NON BASTER\xC0, SE TI VENDICHERAI"
   panelPosition: 2
 --- !u!1102 &1753187308749340858
 AnimatorState:
@@ -3713,7 +3713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I THINK HE DESERVED HIS REVENGE.
+  sentence: PENSO CHE MERITASSE LA SUA VENDETTA.
   panelPosition: 2
 --- !u!1102 &2099335255713096298
 AnimatorState:
@@ -3788,7 +3788,7 @@ AnimatorStateMachine:
     m_Position: {x: -1620, y: -220, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8304042851097644155}
-    m_Position: {x: -600, y: -150, z: 0}
+    m_Position: {x: -590, y: -170, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -753727339634720519}
     m_Position: {x: -1064.5, y: 647.5, z: 0}
@@ -3962,7 +3962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: All the time I spent in it, I thought about my revenge.
+  sentence: Per tutto il tempo che ho passato in esso, ho pensato alla mia vendetta.
   panelPosition: 3
 --- !u!1101 &2585741288949674235
 AnimatorStateTransition:
@@ -4737,7 +4737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "I\u2019ll take my responsibility."
+  sentence: "Sono pronto ad assumermi le mie responsabilit\xE0."
   panelPosition: 3
 --- !u!1101 &5345297035266451167
 AnimatorStateTransition:
@@ -4868,7 +4868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I'm listening you, go on.
+  sentence: Continua, ti sto ascoltando.
   panelPosition: 1
 --- !u!1101 &5822779050008037470
 AnimatorStateTransition:
@@ -5353,7 +5353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: SOUL, YOU SEEM VERY DETERMINED.
+  sentence: SEMBRI MOLTO DETERMINATO, ANIMA.
   panelPosition: 2
 --- !u!1101 &7017558587620315251
 AnimatorStateTransition:
@@ -5392,8 +5392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I want revenge against a man who has committed atrocities against my
-    family.
+  sentence: "Voglio vendetta contro un uomo che ha commesso delle atrocit\xE0 verso
+    la mia famiglia."
   panelPosition: 3
 --- !u!114 &7113470686352264903
 MonoBehaviour:
@@ -5425,7 +5425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I've reason to be.
+  sentence: Ho motivo di esserlo.
   panelPosition: 3
 --- !u!114 &7256299541598167171
 MonoBehaviour:
@@ -5492,7 +5492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: IT'S FAIR THAT HE SHOULD TAKE HIS REVENGE.
+  sentence: "\xC8 GIUSTO CHE SI PRENDA LA SUA VENDETTA."
   panelPosition: 2
 --- !u!1102 &7561759813682156525
 AnimatorState:
@@ -5830,7 +5830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Killing for revenge has led many souls to end up in Tartarus.
+  sentence: Uccidere per vendetta ha portato molte anime a finire nel Tartaro
   panelPosition: 0
 --- !u!1102 &8737330925428361210
 AnimatorState:

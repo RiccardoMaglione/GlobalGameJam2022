@@ -40,8 +40,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: There was a thief armed with a knife and I hid in the room where I took
-    the gun from the nightstand.
+  sentence: C'era un ladro armato di coltello e sono andato a nascondere in camera
+    dove ho preso la pistola dal comodino.
   panelPosition: 3
 --- !u!114 &-8862911853299117280
 MonoBehaviour:
@@ -55,8 +55,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I shot a man. It was self-defense, he had a knife and he could 've hurt
-    me or killed me.
+  sentence: Ho sparato ed ucciso un uomo. Era autodifesa.
   panelPosition: 3
 --- !u!1101 &-8754693477459475075
 AnimatorStateTransition:
@@ -170,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I WANT MORE DETAILS.
+  sentence: VOGLIO ALTRI DETTAGLI.
   panelPosition: 2
 --- !u!1102 &-8382945203507924264
 AnimatorState:
@@ -322,6 +321,31 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &-6525843779993001399
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextLine
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -2001962660877636006}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1102 &-6376689606683997294
 AnimatorState:
   serializedVersion: 6
@@ -362,8 +386,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Fear took over, I was afraid for my life.
+  sentence: 'La paura ha preso il sopravvento, ho temuto per la mia vita. '
   panelPosition: 3
+--- !u!1101 &-5835128503116602663
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextLine
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 3034881131209619609}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!114 &-5779829125856889358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -376,7 +425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: MAYBE YOU ARE ONE OF THEM.
+  sentence: MAGARI SEI UNA DI LORO.
   panelPosition: 2
 --- !u!1101 &-5719853114641700724
 AnimatorStateTransition:
@@ -418,7 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: The judges certainly had a hard time judging you.
+  sentence: "I Giudici avranno sicuramente avuto difficolt\xE0 a giudicarti."
   panelPosition: 1
 --- !u!1102 &-5471411122254273480
 AnimatorState:
@@ -482,7 +531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: It wasn't even an easy judgment.
+  sentence: Non era nemmeno un giudizio facile.
   panelPosition: 0
 --- !u!1102 &-4662869506490629765
 AnimatorState:
@@ -524,7 +573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "YOU STILL TOOK A MAN\u2019S LIFE."
+  sentence: HAI COMUNQUE TOLTO LA VITA AD UN UOMO.
   panelPosition: 2
 --- !u!1102 &-4395340468573869915
 AnimatorState:
@@ -566,31 +615,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0f5b566e68fd9e4d842262f9c0286e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1101 &-3745904555573099700
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: NextLine
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 3034881131209619609}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0.75
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1102 &-3701532542220199687
 AnimatorState:
   serializedVersion: 6
@@ -732,6 +756,20 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!114 &-2963844245806091021
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentence: ' Lui aveva un coltello e avrebbe potuto farmi male o uccidermi.'
+  panelPosition: 3
 --- !u!1101 &-2684482418723559466
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -822,7 +860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I REMAIN CONVINCED THAT HE STILL KILLED A MAN AND THAT HE HAD TO BE CONVICTED.
+  sentence: IO RIMANGO CONVINTO CHE HA COMUNQUE UCCISO UN UOMO E CHE ANDAVA CONDANNATO.
   panelPosition: 2
 --- !u!1101 &-2223265283047891743
 AnimatorStateTransition:
@@ -849,6 +887,34 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1102 &-2001962660877636006
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New State 0 0 0 1 1
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: -5835128503116602663}
+  m_StateMachineBehaviours:
+  - {fileID: -2963844245806091021}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1101 &-1935696622391073437
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1006,6 +1072,31 @@ AnimatorStateTransition:
   m_TransitionOffset: 0
   m_ExitTime: 0.75
   m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &-1159287852050522903
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextLine
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 3034881131209619609}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -1290,7 +1381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: This gives us a more complete picture of the situation.
+  sentence: "Questo ci da un quadro pi\xF9 completo della situazione"
   panelPosition: 1
 --- !u!1102 &314257507603678875
 AnimatorState:
@@ -1333,7 +1424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: The majority has ruled.
+  sentence: La maggioranza ha deciso.
   panelPosition: 1
 --- !u!1101 &865946601867644807
 AnimatorStateTransition:
@@ -1447,7 +1538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: It was night and I heard noises coming from the living room.
+  sentence: Era notte e ho sentito dei rumori provenire dal soggiorno.
   panelPosition: 3
 --- !u!1102 &1829752566788945642
 AnimatorState:
@@ -1567,7 +1658,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 7991611163931610615}
-    m_Position: {x: 2420, y: -70, z: 0}
+    m_Position: {x: 2450, y: -290, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8088170169960188088}
     m_Position: {x: 1200, y: -250, z: 0}
@@ -1606,7 +1697,7 @@ AnimatorStateMachine:
     m_Position: {x: 1200, y: 880, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3034881131209619609}
-    m_Position: {x: 2420, y: 20, z: 0}
+    m_Position: {x: 2450, y: -70, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4395340468573869915}
     m_Position: {x: 2400, y: 170, z: 0}
@@ -1618,7 +1709,7 @@ AnimatorStateMachine:
     m_Position: {x: 2400, y: 350, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3530947084710411526}
-    m_Position: {x: 2390, y: 460, z: 0}
+    m_Position: {x: 2400, y: 460, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -684721844738217666}
     m_Position: {x: 1530, y: 360, z: 0}
@@ -1643,14 +1734,17 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: -2332370360637634592}
     m_Position: {x: 1200, y: -490, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -2001962660877636006}
+    m_Position: {x: 2450, y: -180, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 1230, y: -660, z: 0}
-  m_EntryPosition: {x: 1230, y: -600, z: 0}
-  m_ExitPosition: {x: 1230, y: -630, z: 0}
+  m_AnyStatePosition: {x: 1220, y: -660, z: 0}
+  m_EntryPosition: {x: 1220, y: -600, z: 0}
+  m_ExitPosition: {x: 1220, y: -630, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -2332370360637634592}
 --- !u!1101 &2216066896108075342
@@ -1899,7 +1993,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: They locked me in the depths of Tartarus with evil souls.
+  sentence: "Mi hanno rinchiuso nelle profondit\xE0 del Tartaro, insieme alle anime
+    malvagie."
   panelPosition: 3
 --- !u!114 &4986650370102796692
 MonoBehaviour:
@@ -1950,7 +2045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68f554ce225bf74c80644ae8981e0e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: We have decided your fate.
+  sentence: Abbiamo deciso la tua sorte.
   test: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1101 &5348333271710072837
 AnimatorStateTransition:
@@ -2042,7 +2137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: IT WAS NOT SUCH A DIFFICULT JUDGMENT.
+  sentence: "NON ERA UN GIUDIZIO COS\xEC DIFFICILE"
   panelPosition: 2
 --- !u!1101 &5873679474418286772
 AnimatorStateTransition:
@@ -2206,7 +2301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Given the circumstances, we were right to leave him.
+  sentence: Viste le circostanze abbiamo fatto bene a lasciarlo.
   panelPosition: 0
 --- !u!1102 &7991611163931610615
 AnimatorState:
@@ -2219,7 +2314,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: -3745904555573099700}
+  - {fileID: -6525843779993001399}
   m_StateMachineBehaviours:
   - {fileID: -8862911853299117280}
   m_Position: {x: 50, y: 50, z: 0}
@@ -2248,7 +2343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: But it might have been killed.
+  sentence: Ma sarebbe potuto morire lui.
   panelPosition: 0
 --- !u!1101 &8056682527232862475
 AnimatorStateTransition:
@@ -2347,7 +2442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Silence.
+  sentence: Silenzio.
   panelPosition: 1
 --- !u!114 &8667436526264391941
 MonoBehaviour:
@@ -2361,7 +2456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: When he entered the room I panicked and shot him.
+  sentence: "Quando \xE8 entrato in camera sono andato nel panico e gli ho sparato."
   panelPosition: 3
 --- !u!114 &9116980289290085086
 MonoBehaviour:
@@ -2375,5 +2470,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "When you\u2019re scared, it\u2019s hard to think clearly."
+  sentence: "Quando si \xE8 spaventati \xE8 difficile ragionare in maniera lucida."
   panelPosition: 0
