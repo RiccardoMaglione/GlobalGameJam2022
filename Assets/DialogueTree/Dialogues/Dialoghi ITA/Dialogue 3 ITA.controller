@@ -2775,7 +2775,7 @@ MonoBehaviour:
   - "Anima tormentata, dimmi qual \xE8 la tua punizione."
   - A chi ti stai riferendo?
   rightQuestions:
-  - 'TU, SCHIFOSA ANIMA, DIMMI PER CHE COSA SEI STATA GIUDICATA '
+  - TU, SCHIFOSA ANIMA, DIMMI PER CHE COSA SEI STATA GIUDICATA.
   - CHE TIPO DI DROGHE?
 --- !u!1101 &8236622743750680674
 AnimatorStateTransition:

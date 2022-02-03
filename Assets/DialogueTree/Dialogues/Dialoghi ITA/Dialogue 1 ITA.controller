@@ -106,8 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I was part of a group on a mountain expedition, but we were caught unprepared
-    and ran out of supplies.
+  sentence: Ero parte di un gruppo in una spedizione tra i monti, ma venimmo colti
+    impreparati e rimanemmo senza provviste per molti giorni.
   panelPosition: 3
 --- !u!1102 &-6605970120049270485
 AnimatorState:
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: MAYBE YOU DESERVED IT.
+  sentence: MAGARI TE LO SEI MERITATO.
   panelPosition: 2
 --- !u!1101 &-5213345340383081514
 AnimatorStateTransition:
@@ -467,7 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: WE KNOW WHAT THE TARTARUS IS, MUCH BETTER THAN YOU.
+  sentence: "SAPPIAMO COS'\xC8 IL TARTARO, MOLTO MEGLIO DI TE."
   panelPosition: 2
 --- !u!114 &-3735051531116682634
 MonoBehaviour:
@@ -481,8 +481,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I did it to survive. There was no food, and I had no choice. I did what
-    I had to do.
+  sentence: L'ho fatto per sopravvivere, non c'era cibo. Non avevo scelta, ho fatto
+    quello che dovevo.
   panelPosition: 3
 --- !u!1101 &-3734635465828672923
 AnimatorStateTransition:
@@ -857,7 +857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: 'It was indeed a tricky situation. '
+  sentence: Era sicuramente una situazione difficile
   panelPosition: 0
 --- !u!1101 &-1279356240320992619
 AnimatorStateTransition:
@@ -1218,7 +1218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: '"Maybe not" was the right answer.'
+  sentence: '"Magari no" era la risposta giusta.'
   panelPosition: 0
 --- !u!1101 &1865936776228568415
 AnimatorStateTransition:
@@ -1430,7 +1430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I was in Tartarus, the place where souls are tortured.
+  sentence: Ero nel Tartaro, il luogo dove si torturano le anime.
   panelPosition: 3
 --- !u!1102 &2756068058218750757
 AnimatorState:
@@ -1562,7 +1562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: The majority has ruled.
+  sentence: La maggioranza ha deciso..
   panelPosition: 1
 --- !u!1102 &4292131385573322172
 AnimatorState:
@@ -1603,7 +1603,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: During that expedition, I fell on the ice and found myself in Hades.
+  sentence: Durante quella spedizione, sono caduto sul ghiaccio e mi sono ritrovato
+    nell'Ade.
   panelPosition: 3
 --- !u!114 &4382127790641934028
 MonoBehaviour:
@@ -1617,7 +1618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I'm not sure yet.
+  sentence: Non ne sono ancora convinto.
   panelPosition: 0
 --- !u!1101 &4414424212040350947
 AnimatorStateTransition:
@@ -1731,7 +1732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I chose who should live and who should die to feed the group.
+  sentence: Scelsi chi doveva vivere e chi morire per sfamare il gruppo.
   panelPosition: 3
 --- !u!114 &5025766849560062579
 MonoBehaviour:
@@ -1745,7 +1746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Or maybe not.
+  sentence: O magari no.
   panelPosition: 0
 --- !u!114 &5060865545573447544
 MonoBehaviour:
@@ -1759,7 +1760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Calm down.
+  sentence: Non farti prendere dalla collera.
   panelPosition: 1
 --- !u!1102 &5076569314601807592
 AnimatorState:
@@ -1826,7 +1827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68f554ce225bf74c80644ae8981e0e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: We have come a final decision.
+  sentence: Siamo arrivati ad una decisione finale.
   test: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1102 &5631823035907625547
 AnimatorState:
@@ -1868,12 +1869,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leftQuestions:
-  - Poor soul, tell me why I should get you out of here.
-  - How did you came here?
+  - "Povera anima, dimmi perch\xE8 dovrei farti uscire da qui."
+  - Come sei arrivata qui?
   centerQuestions:
-  - Tormented soul, tell me your punishment.
+  - "Anima tormentata, dimmi qual \xE8 la tua punizione."
   rightQuestions:
-  - YOU, FILTHY SOUL, WHAT YOU WERE JUDGED FOR?
+  - TU, SCHIFOSA ANIMA, DIMMI PER CHE COSA SEI STATA GIUDICATA.
 --- !u!1101 &6440251181811723907
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1936,7 +1937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: YOU ARE TOO GENEROUS.
+  sentence: TU SEI TROPPO GENEROSO.
   panelPosition: 2
 --- !u!1101 &6562800214826306702
 AnimatorStateTransition:
@@ -1987,7 +1988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: YES, HE DESERVED IT.
+  sentence: "S\xCD, SE LO \xC8 MERITATO."
   panelPosition: 2
 --- !u!1101 &7175172205896745542
 AnimatorStateTransition:
@@ -2139,7 +2140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: We need to see the bigger picture.
+  sentence: Ma dobbiamo vedere il quadro generale.
   panelPosition: 1
 --- !u!1101 &8236622743750680674
 AnimatorStateTransition:
@@ -2178,7 +2179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I decided to take control of the group because I was the only one-armed.
+  sentence: Decisi di assumere il controllo del gruppo, forte del fatto di essere
+    l'unico armato.
   panelPosition: 3
 --- !u!1102 &8631829812283718237
 AnimatorState:
