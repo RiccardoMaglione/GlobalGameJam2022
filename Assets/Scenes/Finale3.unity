@@ -200,11 +200,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "After millennia the Cerberus became meek, anger and fury continued to
+  m_text: 'After millennia the Cerberus became meek, anger and fury continued to
     flow inside him but a sense of responsibility helped him to control his instincts.
-    Hades did not share the vision of this new Cerberus but the latter did not care.\r\n\nIf
+    Hades did not share the vision of this new Cerberus but the latter did not care.
+
+
+    If
     you are interested in seeing the answers of other players you can fill out the
-    form on the itch.io page.\r\n\n\nThanks for playing \"Cerberus Dilemma\u201D!"
+    form on the itch.io page.
+
+
+
+    Thanks for playing Cerberus'' Dilemma!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8892660144e1e394f8795ed4e428d6ea, type: 2}
   m_sharedMaterial: {fileID: -8425439283701500781, guid: 8892660144e1e394f8795ed4e428d6ea, type: 2}

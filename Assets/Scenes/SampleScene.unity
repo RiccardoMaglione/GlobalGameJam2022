@@ -905,17 +905,19 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'In this game you play as Cerberus, the infernal hound guarding the door
-    of Hades.
+  m_Text: 'In questo gioco interpreti il Cerbero, il mastino infernale a guardia
+    della porta dell'' Ade.
 
 
-    Some souls will try to get out, asking you to let them through
-    the door. Judge them depending on the circumstances whether to grant him the
-    passage or devour them and send them back to where they came from.
+
+    Delle anime cercheranno di uscire chiedendoti
+    di lasciarle passare attraverso la porta. Giudicali in base alle circostanze
+    se concedergli il passaggio o divorarle per poi rispedirle da dove sono venute.
 
 
-    There
-    are no right or wrong answers, answer according to your morality.'
+
+    Non
+    ci sono risposte giuste o sbagliate, rispondete secondo la vostra morale.'
 --- !u!222 &238270564
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1847,7 +1849,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -33.508, y: -90, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 300, y: -70}
+  m_AnchoredPosition: {x: 299.99994, y: -70}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!199 &599216306
@@ -6899,7 +6901,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -136.756, y: -90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -300, y: -70}
+  m_AnchoredPosition: {x: -299.99994, y: -70}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!199 &871785357
