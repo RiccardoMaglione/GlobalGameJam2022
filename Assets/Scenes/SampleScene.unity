@@ -390,7 +390,7 @@ Animator:
   m_GameObject: {fileID: 178759305}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d6c847e35a7092148b3f0fa9b1d719c5, type: 2}
+  m_Controller: {fileID: 9100000, guid: 75f6b7810ff94554b944ad14882d4698, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1777,7 +1777,7 @@ Animator:
   m_GameObject: {fileID: 508899730}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9f02a0bc17c95864ead4cb4b955a664c, type: 2}
+  m_Controller: {fileID: 9100000, guid: d6c847e35a7092148b3f0fa9b1d719c5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12750,7 +12750,7 @@ Animator:
   m_GameObject: {fileID: 1139656884}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 75f6b7810ff94554b944ad14882d4698, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9f02a0bc17c95864ead4cb4b955a664c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -14724,6 +14724,7 @@ GameObject:
   - component: {fileID: 4744188463913327562}
   - component: {fileID: 6058828079912363022}
   - component: {fileID: 7236246129503142772}
+  - component: {fileID: 7236246129503142773}
   m_Layer: 5
   m_Name: Left
   m_TagString: Untagged
@@ -14787,6 +14788,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!95 &7236246129503142773
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7236246129503142771}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: abe98ced091b1084c9b116c178a8b1c7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!224 &7714859139448631238
 RectTransform:
   m_ObjectHideFlags: 0
