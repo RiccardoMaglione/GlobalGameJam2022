@@ -354,7 +354,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: There are no right or wrong answers, answer according to your morality.
+  m_Text: Non ci sono risposte giuste o sbagliate, rispondete secondo la vostra morale.
 --- !u!222 &131695138
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -984,8 +984,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: In this game you play as Cerberus, the infernal hound guarding the door
-    of Hades.
+  m_Text: In questo gioco interpreti il Cerbero, il mastino infernale a guardia della
+    porta dell' Ade.
 --- !u!222 &238270564
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13764,9 +13764,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Some souls will try to get out, asking you to let them through the door.
-    Judge them depending on the circumstances whether to grant him the passage or
-    devour them and send them back to where they came from.\r"
+  m_Text: Delle anime cercheranno di uscire chiedendoti di lasciarle passare attraverso
+    la porta. Giudicali in base alle circostanze se concedergli il passaggio o divorarle
+    per poi rispedirle da dove sono venute.
 --- !u!222 &1831508316
 CanvasRenderer:
   m_ObjectHideFlags: 0
