@@ -30,11 +30,11 @@ public class FadeCharacter : MonoBehaviour
             OnlyOnce = true;
             Panel.SetActive(true);
 
-            yield return new WaitForSeconds(10);
+        //    yield return new WaitForSeconds(10);
 
-            Panel.SetActive(false);
+        //    Panel.SetActive(false);
         }
-        yield return new WaitForSeconds(0);
+        yield return new WaitForSeconds(21);
         DeactiveAnimelle();
         StartCoroutine(FadedDialogueFuncIEnum(FadeDialogueTemp, anim));
     }
