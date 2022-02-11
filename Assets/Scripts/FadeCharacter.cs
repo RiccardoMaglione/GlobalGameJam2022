@@ -23,6 +23,11 @@ public class FadeCharacter : MonoBehaviour
         StartCoroutine(IntroductionAndOther(FadeDialogueTemp, anim));
     }
 
+
+    public void FunctionFadeDialogueAnimelle(Image[] FadeDialogueTemp, Animator anim)
+    {
+        StartCoroutine(IntroductionAndOtherAnimelle(FadeDialogueTemp, anim));
+    }
     public IEnumerator IntroductionAndOther(Image[] FadeDialogueTemp, Animator anim)
     {
         if (!OnlyOnce)
@@ -39,7 +44,22 @@ public class FadeCharacter : MonoBehaviour
         DeactiveAnimelle();
         StartCoroutine(FadedDialogueFuncIEnum(FadeDialogueTemp, anim));
     }
+    public IEnumerator IntroductionAndOtherAnimelle(Image[] FadeDialogueTemp, Animator anim)
+    {
+        if (!OnlyOnce)
+        {
+            OnlyOnce = true;
+            Panel.SetActive(true);
 
+            //    yield return new WaitForSeconds(10);
+
+            //    Panel.SetActive(false);
+        }
+        yield return new WaitForSeconds(2);
+        Panel.SetActive(false);
+        DeactiveAnimelle();
+        StartCoroutine(FadedDialogueFuncIEnum(FadeDialogueTemp, anim));
+    }
     public IEnumerator FadedDialogueFuncIEnum(Image[] FadeDialogueTemp, Animator anim)
     {
         yield return new WaitForSeconds(0.5f);

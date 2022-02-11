@@ -23,35 +23,35 @@ public class AnimellaFade : StateMachineBehaviour
             Debug.Log("2");
             animator.SetBool("AnimelleParameters", true);
             FadeAnimelle = GameObject.Find("AnimellaFade");
-            FadeAnimelle.GetComponent<FadeCharacter>().FunctionFadeDialogue(FadeAnimelle.GetComponent<FadeCharacter>().FadeDialogue2, animator);
+            FadeAnimelle.GetComponent<FadeCharacter>().FunctionFadeDialogueAnimelle(FadeAnimelle.GetComponent<FadeCharacter>().FadeDialogue2, animator);
         }
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("AnimellaFade3"))
         {
             Debug.Log("3");
             animator.SetBool("AnimelleParameters", true);
             FadeAnimelle = GameObject.Find("AnimellaFade");
-            FadeAnimelle.GetComponent<FadeCharacter>().FunctionFadeDialogue(FadeAnimelle.GetComponent<FadeCharacter>().FadeDialogue3, animator);
+            FadeAnimelle.GetComponent<FadeCharacter>().FunctionFadeDialogueAnimelle(FadeAnimelle.GetComponent<FadeCharacter>().FadeDialogue3, animator);
         }
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("AnimellaFade4"))
         {
             Debug.Log("4");
             animator.SetBool("AnimelleParameters", true);
             FadeAnimelle = GameObject.Find("AnimellaFade");
-            FadeAnimelle.GetComponent<FadeCharacter>().FunctionFadeDialogue(FadeAnimelle.GetComponent<FadeCharacter>().FadeDialogue4, animator);
+            FadeAnimelle.GetComponent<FadeCharacter>().FunctionFadeDialogueAnimelle(FadeAnimelle.GetComponent<FadeCharacter>().FadeDialogue4, animator);
         }
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("AnimellaFade5"))
         {
             Debug.Log("5");
             animator.SetBool("AnimelleParameters", true);
             FadeAnimelle = GameObject.Find("AnimellaFade");
-            FadeAnimelle.GetComponent<FadeCharacter>().FunctionFadeDialogue(FadeAnimelle.GetComponent<FadeCharacter>().FadeDialogue5, animator);
+            FadeAnimelle.GetComponent<FadeCharacter>().FunctionFadeDialogueAnimelle(FadeAnimelle.GetComponent<FadeCharacter>().FadeDialogue5, animator);
         }
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("AnimellaFade6"))
         {
             Debug.Log("6");
             animator.SetBool("AnimelleParameters", true);
             FadeAnimelle = GameObject.Find("AnimellaFade");
-            FadeAnimelle.GetComponent<FadeCharacter>().FunctionFadeDialogue(FadeAnimelle.GetComponent<FadeCharacter>().FadeDialogue6, animator);
+            FadeAnimelle.GetComponent<FadeCharacter>().FunctionFadeDialogueAnimelle(FadeAnimelle.GetComponent<FadeCharacter>().FadeDialogue6, animator);
         }
 
     }
