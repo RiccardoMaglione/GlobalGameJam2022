@@ -228,7 +228,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1881994826}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5930,6 +5930,51 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &749945918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 749945920}
+  - component: {fileID: 749945919}
+  m_Layer: 0
+  m_Name: LanguageManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &749945919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749945918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef5b6d17a5977d44a3f3f3659e304cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MenuPanel: {fileID: 155562464}
+  OptionPanel: {fileID: 1881994825}
+--- !u!4 &749945920
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749945918}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.0137553, y: -1.0123464, z: 20.352732}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &835093086
 GameObject:
   m_ObjectHideFlags: 0
@@ -6018,7 +6063,6 @@ GameObject:
   - component: {fileID: 867699683}
   - component: {fileID: 867699682}
   - component: {fileID: 867699681}
-  - component: {fileID: 867699685}
   m_Layer: 5
   m_Name: FrecciaDX
   m_TagString: Untagged
@@ -6038,7 +6082,7 @@ RectTransform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 1881994826}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6105,7 +6149,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 867699685}
+      - m_Target: {fileID: 749945919}
         m_TargetAssemblyTypeName: Language, Assembly-CSharp
         m_MethodName: ItaToEng
         m_Mode: 1
@@ -6155,18 +6199,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867699679}
   m_CullTransparentMesh: 1
---- !u!114 &867699685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867699679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ef5b6d17a5977d44a3f3f3659e304cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &911476900
 GameObject:
   m_ObjectHideFlags: 0
@@ -11692,7 +11724,6 @@ GameObject:
   - component: {fileID: 1221996996}
   - component: {fileID: 1221996995}
   - component: {fileID: 1221996994}
-  - component: {fileID: 1221996997}
   m_Layer: 5
   m_Name: FrecciaSX
   m_TagString: Untagged
@@ -11707,13 +11738,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1221996992}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 1881994826}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -842.7, y: -171}
@@ -11763,7 +11794,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1221996997}
+      - m_Target: {fileID: 749945919}
         m_TargetAssemblyTypeName: Language, Assembly-CSharp
         m_MethodName: ItaToEng
         m_Mode: 1
@@ -11813,18 +11844,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1221996992}
   m_CullTransparentMesh: 1
---- !u!114 &1221996997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1221996992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ef5b6d17a5977d44a3f3f3659e304cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1270630724
 GameObject:
   m_ObjectHideFlags: 0
@@ -22051,9 +22070,9 @@ RectTransform:
   - {fileID: 1271613847}
   - {fileID: 2060898484}
   - {fileID: 96628920}
+  - {fileID: 131264907}
   - {fileID: 1221996993}
   - {fileID: 867699680}
-  - {fileID: 131264907}
   m_Father: {fileID: 704791133}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
