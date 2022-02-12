@@ -52,10 +52,11 @@ public class EndDialogue : StateMachineBehaviour
 
         panelText.text = sentence;
 
-        fadeManager.GetComponent<FadeObject>().FadeImage(letItOut);
-        fadeManager.GetComponent<FadeObject>().FadeImage(condemn);
-        fadeManager.GetComponent<FadeObject>().FadeText(letItOutButtonText);
-        fadeManager.GetComponent<FadeObject>().FadeText(condemnButtonText);
+        /*Fade Manager: Funziona Correttamente*/fadeManager.GetComponent<FadeObject>().FadeImage(letItOut);
+        /*Fade Manager: Funziona Correttamente*/fadeManager.GetComponent<FadeObject>().FadeImage(condemn);
+
+        /*Fade Manager: Flickera*/fadeManager.GetComponent<FadeObject>().FadeText(letItOutButtonText);
+        /*Fade Manager: Flickera*/fadeManager.GetComponent<FadeObject>().FadeText(condemnButtonText);
     }
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

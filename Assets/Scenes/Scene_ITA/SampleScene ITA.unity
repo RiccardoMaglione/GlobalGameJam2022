@@ -210,6 +210,8 @@ MonoBehaviour:
   BlackPanelTimerForEveryAddAlpha: 0.01
   PanelBlack: {fileID: 1344632127}
   CanChangeDialogue: 0
+  ButtonTimeFadeAlphaToZero: 0
+  TextTimeFadeAlphaToMax: 2.5
 --- !u!4 &91397764
 Transform:
   m_ObjectHideFlags: 0
@@ -1733,9 +1735,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CountSpared: 0
-  NameGameover12: Finale1
-  NameGameover34: Finale2
-  NameGameover56: Finale3
+  NameGameover12: Finale1 ITA
+  NameGameover34: Finale2 ITA
+  NameGameover56: Finale3 ITA
 --- !u!4 &446318052
 Transform:
   m_ObjectHideFlags: 0

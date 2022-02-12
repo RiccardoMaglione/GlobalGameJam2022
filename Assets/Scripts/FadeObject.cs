@@ -16,6 +16,14 @@ public class FadeObject : MonoBehaviour
     [HideInInspector] public bool CanChangeDialogue;
     CharactersManager characterManager;
     ButtonManager buttonManager;
+    [Header("Time for fade image/text of buttons: Spared/Devoured")]
+    [Tooltip("Time del fade da alpha 100 a 0 dell'immagine del bottone spared/graziato e devoured/divorato")]
+    public float ButtonTimeFadeAlphaToZero;
+    [Tooltip("Time del fade da alpha 0 a 100 del testo bottone spared/graziato e devoured/divorato")]
+    public float TextTimeFadeAlphaToMax;
+
+
+
     public IEnumerator FadeImageIEnum(GameObject ObjectToFade, Color ColorToAlpha)
     {
         ColorToAlpha = ObjectToFade.GetComponent<Image>().color;
@@ -66,14 +74,24 @@ public class FadeObject : MonoBehaviour
         ObjectToFade.GetComponent<Image>().CrossFadeAlpha(0, 1f, false);
     }
 
+    /// <summary>
+    /// Metodo che esegue un fade sulle immagini del bottone di "Spared/Graziato" e "Devoured/Divorato" di quando il giocatore deve scegliere
+    /// </summary>
+    /// <param name="ObjectToFade"></param>
     public void FadeImage(GameObject ObjectToFade)
     {
-        StartCoroutine(FadeImageIEnum(ObjectToFade, ObjectToFade.GetComponent<Image>().color));
+        ObjectToFade.GetComponent<Image>().CrossFadeAlpha(0, 0, false);
+        ObjectToFade.GetComponent<Image>().CrossFadeAlpha(1, 5, false);
     }
 
+    /// <summary>
+    /// Metodo che esegue un fade sul testo "Spared/Graziato" e "Devoured/Divorato" dei bottoni di quando il giocatore deve scegliere
+    /// </summary>
+    /// <param name="TextToFade"></param>
     public void FadeText(Text TextToFade)
     {
-        StartCoroutine(FadeTextIEnum(TextToFade, TextToFade.color));
+        TextToFade.CrossFadeAlpha(0, 0, false);
+        TextToFade.CrossFadeAlpha(1, 5, false);
     }
 
     public void FadeChangeDialogue(GameObject ObjectToFade)
