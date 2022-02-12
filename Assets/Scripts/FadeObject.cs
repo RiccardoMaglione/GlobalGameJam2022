@@ -16,6 +16,8 @@ public class FadeObject : MonoBehaviour
     [HideInInspector] public bool CanChangeDialogue;
     CharactersManager characterManager;
     ButtonManager buttonManager;
+
+
     [Header("Time for fade image/text of buttons: Spared/Devoured")]
     [Tooltip("Time del fade da alpha 100 a 0 dell'immagine del bottone spared/graziato e devoured/divorato")]
     public float ButtonTimeFadeAlphaToZero;

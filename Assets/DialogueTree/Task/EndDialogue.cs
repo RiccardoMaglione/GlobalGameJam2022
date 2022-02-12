@@ -22,7 +22,7 @@ public class EndDialogue : StateMachineBehaviour
 
     public Color test;
     GameObject judgementManager;
-
+    GameObject animellaFade;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.SetBool("test", true);
@@ -33,7 +33,7 @@ public class EndDialogue : StateMachineBehaviour
 
         fadeManager = GameObject.Find("FadeManager");
         judgementManager = GameObject.Find("JudgementManager");
-
+        animellaFade = GameObject.Find("AnimellaFade");
 
         panelText = chosenPanel.GetComponentInChildren<Text>();
         letItOutButtonText = letItOut.GetComponentInChildren<Text>();
@@ -61,6 +61,8 @@ public class EndDialogue : StateMachineBehaviour
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        animellaFade.GetComponent<FadeCharacter>().DeactiveAnimelle();
+
         animator.SetBool("Condemn", false);
         animator.SetBool("LetItOut", false);
         letItOut.GetComponent<Image>().enabled = false;
