@@ -22546,9 +22546,9 @@ MonoBehaviour:
   ImagePlayButton: {fileID: 2081112907}
   ImageOptionButton: {fileID: 1905535243}
   ImageCreditsButton: {fileID: 1046148289}
-  SpritePlayDehover: {fileID: 21300000, guid: 65f17bf34c503324491bb8e992bc83b9, type: 3}
-  SpriteOptionDehover: {fileID: 21300000, guid: 0224d11ffde7e234da0079272cfea15b, type: 3}
-  SpriteCreditsDehover: {fileID: 21300000, guid: 712df6b7a9b396d47971c4d82c4b95a0, type: 3}
+  SpritePlayDehover: {fileID: 21300000, guid: bfc5f3ba389bd314d81c7ac8d425adbf, type: 3}
+  SpriteOptionDehover: {fileID: 21300000, guid: d396d1cb51ec8fd4694007af5d955552, type: 3}
+  SpriteCreditsDehover: {fileID: 21300000, guid: bfa4fb150cdfdf64f9eecaeb9aa8d117, type: 3}
   FirePlay: {fileID: 584846342}
   FireOption: {fileID: 944505425}
   FireCredits: {fileID: 1455004937}
