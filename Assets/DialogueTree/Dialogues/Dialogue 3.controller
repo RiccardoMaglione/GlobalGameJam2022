@@ -1563,7 +1563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I THINK WE SHOULD HAVE JUDGED WHAT HE DID, NOT ITS INTENTIONS
+  sentence: WE SHOULD HAVE JUDGED WHAT HE DID, NOT ITS INTENTIONS.
   panelPosition: 2
 --- !u!114 &1416788116968174253
 MonoBehaviour:
@@ -1629,43 +1629,43 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 3340655657794879565}
-    m_Position: {x: 2390, y: -100, z: 0}
+    m_Position: {x: 2220, y: -170, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6260441681181887254}
     m_Position: {x: 1240, y: -220, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5627345572552707054}
-    m_Position: {x: 1200, y: 780, z: 0}
+    m_Position: {x: 1260, y: 630, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3173939913816263905}
     m_Position: {x: 520, y: -80, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -430148011235346088}
-    m_Position: {x: 1010, y: 1010, z: 0}
+    m_Position: {x: 1070, y: 860, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8259944775598884833}
-    m_Position: {x: 1390, y: 1010, z: 0}
+    m_Position: {x: 1450, y: 860, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7917939886409879304}
-    m_Position: {x: 1190, y: 1240, z: 0}
+    m_Position: {x: 1250, y: 1090, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6757449405570161979}
-    m_Position: {x: 1390, y: 870, z: 0}
+    m_Position: {x: 1450, y: 720, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 582046304367762636}
-    m_Position: {x: 1010, y: 940, z: 0}
+    m_Position: {x: 1070, y: 790, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7943137635180120437}
     m_Position: {x: 1610, y: 170, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -347830550635034306}
-    m_Position: {x: 1010, y: 870, z: 0}
+    m_Position: {x: 1070, y: 720, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4796835470312525329}
-    m_Position: {x: 1390, y: 940, z: 0}
+    m_Position: {x: 1450, y: 790, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6512656518423248955}
-    m_Position: {x: 1190, y: 1150, z: 0}
+    m_Position: {x: 1250, y: 1000, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3422904219012921403}
     m_Position: {x: 2400, y: 170, z: 0}
@@ -1725,9 +1725,9 @@ AnimatorStateMachine:
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 1210, y: -610, z: 0}
-  m_EntryPosition: {x: 1210, y: -550, z: 0}
-  m_ExitPosition: {x: 1210, y: -580, z: 0}
+  m_AnyStatePosition: {x: 1250, y: -570, z: 0}
+  m_EntryPosition: {x: 1250, y: -510, z: 0}
+  m_ExitPosition: {x: 1250, y: -540, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 5052034344679345714}
 --- !u!114 &2244540097979882774

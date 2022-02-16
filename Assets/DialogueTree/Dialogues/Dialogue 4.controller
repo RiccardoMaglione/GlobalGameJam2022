@@ -888,7 +888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I REMAIN CONVINCED THAT HE STILL KILLED A MAN AND THAT HE HAD TO BE CONVICTED.
+  sentence: HE STILL KILLED A MAN AND HE HAD TO BE CONVICTED.
   panelPosition: 2
 --- !u!1101 &-2223265283047891743
 AnimatorStateTransition:

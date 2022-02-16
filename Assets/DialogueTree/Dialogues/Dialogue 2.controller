@@ -661,7 +661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: You probably have done something very serious to deserve it.
+  sentence: Maybe you have done something very serious to deserve it.
   panelPosition: 1
 --- !u!114 &-2203473021819003421
 MonoBehaviour:

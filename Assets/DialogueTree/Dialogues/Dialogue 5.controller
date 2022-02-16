@@ -1937,7 +1937,7 @@ AnimatorStateMachine:
     m_Position: {x: 490, y: -10, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4443538072972657647}
-    m_Position: {x: -180, y: 20, z: 0}
+    m_Position: {x: -220, y: 20, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1279111002408424319}
     m_Position: {x: 490, y: 90, z: 0}
@@ -2178,7 +2178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I was condemned to die atrociously at the hands of the Furies in Tartarus, 
+  sentence: I was condemned to die atrociously at the hands of the Furies in Tartarus,
     for eternity.
   panelPosition: 3
 --- !u!1101 &3142904048634009520
