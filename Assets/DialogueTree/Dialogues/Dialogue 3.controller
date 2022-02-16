@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: YOU'RE LUCKY YOU WERE SENTENCED TO THE ASPHODEL FIELDS.
+  sentence: YOU'RE LUCKY YOU WERE SENTENCED TO THE ASPHODEL.
   panelPosition: 2
 --- !u!1101 &-8420232567757339678
 AnimatorStateTransition:
@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: But maybe an innocent will get involved
+  sentence: But maybe an innocent will get involved.
   panelPosition: 0
 --- !u!1101 &-6868348574926284898
 AnimatorStateTransition:
@@ -848,7 +848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: STOP TAKING THESE BREAKS, SPEAK TO ME CLEARLY
+  sentence: STOP TAKING THESE BREAKS, SPEAK TO ME CLEARLY.
   panelPosition: 2
 --- !u!1102 &-3208707249357091448
 AnimatorState:
@@ -1035,7 +1035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: ...we had an argument over about... um... sharing our revenues...
+  sentence: ...we had an argument over about... uh... sharing our revenues...
   panelPosition: 3
 --- !u!1101 &-1601205490155473042
 AnimatorStateTransition:
@@ -1457,7 +1457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Let her go on
+  sentence: Let her go on.
   panelPosition: 1
 --- !u!1102 &582046304367762636
 AnimatorState:
@@ -1779,7 +1779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: SHE GOT WHAT HE DESERVED
+  sentence: SHE GOT WHAT HE DESERVED.
   panelPosition: 2
 --- !u!1102 &2811295278431945733
 AnimatorState:
@@ -2099,7 +2099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: It's not fair that the daughter get involved because of him
+  sentence: It's not fair that the daughter get involved because of him.
   panelPosition: 0
 --- !u!1102 &4768061580455027532
 AnimatorState:
@@ -2577,7 +2577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: YOU DESERVE TO GO TO THE TARTARUS
+  sentence: YOU DESERVE TO GO TO THE TARTARUS.
   panelPosition: 2
 --- !u!1101 &7288303813893708824
 AnimatorStateTransition:
