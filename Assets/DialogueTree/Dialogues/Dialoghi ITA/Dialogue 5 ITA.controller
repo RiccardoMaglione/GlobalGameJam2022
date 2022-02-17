@@ -113,8 +113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "I stole a purseHo rubato la borsa a una signora, \xE8 vero, ma non credo
-    di meritarmi quello che sto passando."
+  sentence: "Ho rubato la borsa a una signora, \xE8 vero, ma non credo di meritarmi
+    quello che sto passando."
   panelPosition: 3
 --- !u!1102 &-7874891099076019512
 AnimatorState:
