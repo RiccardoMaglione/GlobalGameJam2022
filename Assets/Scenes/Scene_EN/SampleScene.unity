@@ -210,6 +210,8 @@ MonoBehaviour:
   BlackPanelTimerForEveryAddAlpha: 0.01
   PanelBlack: {fileID: 1344632127}
   CanChangeDialogue: 0
+  ButtonTimeFadeAlphaToZero: 0
+  TextTimeFadeAlphaToMax: 2.5
 --- !u!4 &91397764
 Transform:
   m_ObjectHideFlags: 0
@@ -390,7 +392,7 @@ Animator:
   m_GameObject: {fileID: 178759305}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 75f6b7810ff94554b944ad14882d4698, type: 2}
+  m_Controller: {fileID: 9100000, guid: d6c847e35a7092148b3f0fa9b1d719c5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1777,7 +1779,7 @@ Animator:
   m_GameObject: {fileID: 508899730}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d6c847e35a7092148b3f0fa9b1d719c5, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9f02a0bc17c95864ead4cb4b955a664c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1917,7 +1919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -33.508, y: -90, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 299.99994, y: -70}
+  m_AnchoredPosition: {x: 300, y: -70}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!199 &599216306
@@ -6969,7 +6971,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -136.756, y: -90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -299.99994, y: -70}
+  m_AnchoredPosition: {x: -300, y: -70}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!199 &871785357
@@ -12750,7 +12752,7 @@ Animator:
   m_GameObject: {fileID: 1139656884}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9f02a0bc17c95864ead4cb4b955a664c, type: 2}
+  m_Controller: {fileID: 9100000, guid: 75f6b7810ff94554b944ad14882d4698, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

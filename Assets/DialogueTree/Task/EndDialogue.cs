@@ -22,7 +22,7 @@ public class EndDialogue : StateMachineBehaviour
 
     public Color test;
     GameObject judgementManager;
-
+    GameObject animellaFade;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.SetBool("test", true);
@@ -33,7 +33,7 @@ public class EndDialogue : StateMachineBehaviour
 
         fadeManager = GameObject.Find("FadeManager");
         judgementManager = GameObject.Find("JudgementManager");
-
+        animellaFade = GameObject.Find("AnimellaFade");
 
         panelText = chosenPanel.GetComponentInChildren<Text>();
         letItOutButtonText = letItOut.GetComponentInChildren<Text>();
@@ -52,14 +52,17 @@ public class EndDialogue : StateMachineBehaviour
 
         panelText.text = sentence;
 
-        fadeManager.GetComponent<FadeObject>().FadeImage(letItOut);
-        fadeManager.GetComponent<FadeObject>().FadeImage(condemn);
-        fadeManager.GetComponent<FadeObject>().FadeText(letItOutButtonText);
-        fadeManager.GetComponent<FadeObject>().FadeText(condemnButtonText);
+        /*Fade Manager: Funziona Correttamente*/fadeManager.GetComponent<FadeObject>().FadeImage(letItOut);
+        /*Fade Manager: Funziona Correttamente*/fadeManager.GetComponent<FadeObject>().FadeImage(condemn);
+
+        /*Fade Manager: Flickera*/fadeManager.GetComponent<FadeObject>().FadeText(letItOutButtonText);
+        /*Fade Manager: Flickera*/fadeManager.GetComponent<FadeObject>().FadeText(condemnButtonText);
     }
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        animellaFade.GetComponent<FadeCharacter>().DeactiveAnimelle();
+
         animator.SetBool("Condemn", false);
         animator.SetBool("LetItOut", false);
         letItOut.GetComponent<Image>().enabled = false;

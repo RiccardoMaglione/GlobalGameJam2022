@@ -2222,7 +2222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I was selling drugs with my husband to make money
+  sentence: Vendevo droga con mio marito per fare soldi...
   panelPosition: 3
 --- !u!1101 &5519564779888581269
 AnimatorStateTransition:
