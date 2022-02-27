@@ -931,7 +931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "QUESTA SCELTA SI RIPERCUOTER\xC0 NEL MONDO DEI MORTALI."
+  sentence: "QUESTA SCELTA SI RIPERCUOTER\xC0 SUI MORTALI."
   panelPosition: 2
 --- !u!1102 &-2953437105234990575
 AnimatorState:
