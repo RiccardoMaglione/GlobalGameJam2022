@@ -626,7 +626,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Grazie per aver giocato \u201CCerberus\u2019 dilemma\u201D!"
+  m_Text: "Grazie per aver giocato \u201CCerberus\u2019 Dilemma\u201D!"
 --- !u!222 &1887172074
 CanvasRenderer:
   m_ObjectHideFlags: 0
