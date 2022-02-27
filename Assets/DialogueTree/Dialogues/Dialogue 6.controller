@@ -474,6 +474,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentence: When he entered the room I panicked and shot him.
   panelPosition: 3
+--- !u!1101 &-7401279661660711405
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextLine
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: n1
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -1921740570173581269}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1102 &-7340865542451838858
 AnimatorState:
   serializedVersion: 6
@@ -1887,6 +1915,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: b1
     m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: c1
+    m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: FirstQuestion
     m_EventTreshold: 0
@@ -2875,73 +2906,79 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: FirstQuestion
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: SecondQuestion
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: ThirdQuestion
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: n1
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: b1
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
+  - m_Name: c1
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   - m_Name: EndDialogue
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Condemn
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: LetItOut
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: FinishJudgement
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: AnimelleParameters
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 1
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: test
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -3764,7 +3801,7 @@ AnimatorStateMachine:
     m_Position: {x: -1244.5, y: 507.5, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2099335255713096298}
-    m_Position: {x: -1054.5, y: 277.5, z: 0}
+    m_Position: {x: -1050, y: 230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4561702688934952787}
     m_Position: {x: -864.5, y: 437.5, z: 0}
@@ -3779,10 +3816,10 @@ AnimatorStateMachine:
     m_Position: {x: -1244.5, y: 437.5, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5175678707661794588}
-    m_Position: {x: 20, y: -470, z: 0}
+    m_Position: {x: -40, y: -410, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1921740570173581269}
-    m_Position: {x: -1064.5, y: -482.5, z: 0}
+    m_Position: {x: -1060, y: -480, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3053933632324275361}
     m_Position: {x: -1820, y: -450, z: 0}
@@ -3794,19 +3831,19 @@ AnimatorStateMachine:
     m_Position: {x: -1064.5, y: 647.5, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 169281656446323402}
-    m_Position: {x: 20, y: -400, z: 0}
+    m_Position: {x: -40, y: -340, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5234838062681908845}
-    m_Position: {x: 20, y: -330, z: 0}
+    m_Position: {x: -40, y: -270, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6739158904020200713}
-    m_Position: {x: 20, y: -250, z: 0}
+    m_Position: {x: -40, y: -190, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6831685176082083003}
     m_Position: {x: -550, y: 50, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6097985264652546382}
-    m_Position: {x: -1820, y: -290, z: 0}
+    m_Position: {x: -1820, y: -310, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4692926522179014879}
     m_Position: {x: -1820, y: -220, z: 0}
@@ -4063,6 +4100,7 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -8336297549063671996}
+  - {fileID: -7401279661660711405}
   m_StateMachineBehaviours:
   - {fileID: 7062981367767066334}
   m_Position: {x: 50, y: 50, z: 0}
