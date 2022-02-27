@@ -1791,7 +1791,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: NextLine
+    m_ConditionEvent: SecondQuestion
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2903423928726228000}
@@ -1926,7 +1926,7 @@ AnimatorStateMachine:
     m_Position: {x: 2400, y: 460, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -684721844738217666}
-    m_Position: {x: 1530, y: 360, z: 0}
+    m_Position: {x: 1420, y: 400, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1108647663507833546}
     m_Position: {x: 1820, y: 350, z: 0}
