@@ -106,8 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Ero parte di un gruppo in una spedizione tra i monti, ma venimmo colti
-    impreparati e rimanemmo senza provviste per molti giorni.
+  sentence: Ero parte di un gruppo in una spedizione tra i monti.
   panelPosition: 3
 --- !u!1102 &-6605970120049270485
 AnimatorState:
@@ -120,7 +119,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 2951913843202464265}
+  - {fileID: -5503851806600409889}
   m_StateMachineBehaviours:
   - {fileID: -7396595810198811150}
   m_Position: {x: 50, y: 50, z: 0}
@@ -337,6 +336,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentence: MAGARI TE LO SEI MERITATO.
   panelPosition: 2
+--- !u!1101 &-5503851806600409889
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextLine
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -3037130902443769298}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &-5213345340383081514
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -612,6 +636,34 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1102 &-3037130902443769298
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New State 0 0 0 1 0
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 6002588424380911840}
+  m_StateMachineBehaviours:
+  - {fileID: 509326305217799064}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 0}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &-2805315011142989534
 AnimatorState:
   serializedVersion: 6
@@ -857,7 +909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Era sicuramente una situazione difficile
+  sentence: Era sicuramente una situazione difficile.
   panelPosition: 0
 --- !u!1101 &-1279356240320992619
 AnimatorStateTransition:
@@ -1072,6 +1124,21 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+--- !u!114 &509326305217799064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentence: Purtroppo venimmo colti impreparati e rimanemmo senza provviste per molti
+    giorni.
+  panelPosition: 3
 --- !u!1101 &704656258468372608
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1328,7 +1395,7 @@ AnimatorStateMachine:
     m_Position: {x: 30, y: -60, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6605970120049270485}
-    m_Position: {x: 1000, y: 170, z: 0}
+    m_Position: {x: 1000, y: 90, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1795878808883904119}
     m_Position: {x: 20, y: 990, z: 0}
@@ -1383,6 +1450,9 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 3397623524771418100}
     m_Position: {x: 30, y: -240, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -3037130902443769298}
+    m_Position: {x: 1000, y: 170, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -1472,31 +1542,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0f5b566e68fd9e4d842262f9c0286e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1101 &2951913843202464265
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: NextLine
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -5902485624921941400}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0.75
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1102 &3397623524771418100
 AnimatorState:
   serializedVersion: 6
@@ -1562,7 +1607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: La maggioranza ha deciso..
+  sentence: La maggioranza ha deciso.
   panelPosition: 1
 --- !u!1102 &4292131385573322172
 AnimatorState:
@@ -1856,6 +1901,31 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1101 &6002588424380911840
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextLine
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -5902485624921941400}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!114 &6422243743290271504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1874,7 +1944,7 @@ MonoBehaviour:
   centerQuestions:
   - "Anima tormentata, dimmi qual \xE8 la tua punizione."
   rightQuestions:
-  - TU, SCHIFOSA ANIMA, DIMMI PER CHE COSA SEI STATA GIUDICATA.
+  - TU, SCHIFOSA ANIMA, PER COSA SEI STATA GIUDICATA?
 --- !u!1101 &6440251181811723907
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2142,6 +2212,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentence: Ma dobbiamo vedere il quadro generale.
   panelPosition: 1
+--- !u!1101 &8160926452703329026
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: NextLine
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: -5902485624921941400}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &8236622743750680674
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

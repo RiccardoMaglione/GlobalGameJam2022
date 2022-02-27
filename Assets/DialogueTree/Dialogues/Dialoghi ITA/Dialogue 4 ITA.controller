@@ -2224,8 +2224,8 @@ MonoBehaviour:
   centerQuestions:
   - "Anima tormentata, dimmi qual \xE8 la tua punizione."
   rightQuestions:
-  - TU, SCHIFOSA ANIMA, DIMMI PER CHE COSA SEI STATA GIUDICATA.
-  - "VOGLIO ALTRI DETTAGLI, PERCH\xC8 NON RACCONTI TUTTA LA STORIA?"
+  - TU, SCHIFOSA ANIMA, PER COSA SEI STATA GIUDICATA?
+  - VOGLIO ALTRI DETTAGLI, RACCONTAMI TUTTA LA STORIA.
 --- !u!114 &6394951250893737961
 MonoBehaviour:
   m_ObjectHideFlags: 1

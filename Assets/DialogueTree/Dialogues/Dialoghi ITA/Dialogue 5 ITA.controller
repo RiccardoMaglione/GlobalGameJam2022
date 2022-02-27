@@ -2643,7 +2643,7 @@ MonoBehaviour:
   centerQuestions:
   - "Anima tormentata, dimmi qual \xE8 la tua punizione."
   rightQuestions:
-  - TU, SCHIFOSA ANIMA, DIMMI PER CHE COSA SEI STATA GIUDICATA.
+  - TU, SCHIFOSA ANIMA, PER COSA SEI STATA GIUDICATA?
 --- !u!1102 &7263664235087010582
 AnimatorState:
   serializedVersion: 6
