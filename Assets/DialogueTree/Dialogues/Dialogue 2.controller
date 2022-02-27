@@ -1305,7 +1305,7 @@ AnimatorStateMachine:
     m_Position: {x: -760, y: -110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6655268031448897047}
-    m_Position: {x: 260, y: -240, z: 0}
+    m_Position: {x: 240, y: -230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -957816219366243206}
     m_Position: {x: -970, y: -640, z: 0}
@@ -1617,8 +1617,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I was confined to Tartarus, where an evil cult of violent souls tore
-    my body apart in an eternal pagan rite.
+  sentence: I was confined to Tartarus, where an cult of violent souls tore my body
+    apart in an eternal pagan rite.
   panelPosition: 3
 --- !u!114 &5394212219564862806
 MonoBehaviour:
