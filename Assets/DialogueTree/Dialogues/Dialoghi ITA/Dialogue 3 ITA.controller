@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "TI \xC8 ANDATA ANCHE BENE CHE TU SIA STATA CONDANNATA ALL'ASFODELO."
+  sentence: L'ASFODELO ERA ANCHE POCO.
   panelPosition: 2
 --- !u!1101 &-8420232567757339678
 AnimatorStateTransition:
@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "Ma forse ci andr\xE0 di mezzo un innocente"
+  sentence: "Ma forse ci andr\xE0 di mezzo un innocente."
   panelPosition: 0
 --- !u!1101 &-6868348574926284898
 AnimatorStateTransition:
@@ -1563,7 +1563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: SECONDO ME DOVEVAMO GIUDICARE COSA HA FATTO, NON LE SUE INTENZIONI
+  sentence: DOVEVAMO GIUDICARE I FATTI, NON LE INTENZIONI.
   panelPosition: 2
 --- !u!114 &1416788116968174253
 MonoBehaviour:
@@ -1779,7 +1779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: "HA AVUTO CI\xD3 CHE SI MERITAVA"
+  sentence: "HA AVUTO CI\xD3 CHE SI MERITAVA."
   panelPosition: 2
 --- !u!1102 &2811295278431945733
 AnimatorState:

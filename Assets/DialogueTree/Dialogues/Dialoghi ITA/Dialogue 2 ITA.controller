@@ -696,7 +696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68f554ce225bf74c80644ae8981e0e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: Crediamo di aver abbastanza informazioni per formulare un giudizio.
+  sentence: Crediamo di aver abbastanza informazioni.
   test: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1102 &-1980019113721809464
 AnimatorState:
