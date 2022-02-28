@@ -2272,7 +2272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74545ddd3d10c08448d16e445c611b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentence: I decided to take control of the group because I was the only one-armed.
+  sentence: I decided to take control of the group because I was the only one armed.
   panelPosition: 3
 --- !u!1102 &8631829812283718237
 AnimatorState:
